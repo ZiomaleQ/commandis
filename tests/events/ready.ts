@@ -1,7 +1,7 @@
-import { Message } from "https://deno.land/x/corddis@v0.7.1/src/structures/message.ts"
+import { User } from "../../deps.ts"
 import { Client } from "../../src/client.ts"
 
 export default {
     name: "READY",
-    run: (client: Client, msg: Message) => { console.log(msg.toString()) }
+    run: (client: Client, user: User) => { console.log("Logged as " + user.data.username) }
 } 

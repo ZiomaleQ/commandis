@@ -53,10 +53,6 @@ export class Client extends Corddis {
             }
         })
         if (this.options.debug) this.on("debug", console.log)
-        this.on("READY", (user: User) => {
-            console.log("Logged as " + user.data.username)
-        })
-
         return await super.login(token)
     }
 }
