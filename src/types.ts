@@ -15,6 +15,7 @@ export interface CommandisOptions {
     intents?: number[];
     prefix?: string;
     debug?: boolean;
+    hotreload?: boolean;
 }
 
 export interface Event {
