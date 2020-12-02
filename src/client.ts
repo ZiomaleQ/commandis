@@ -22,12 +22,13 @@ export class Client extends Corddis {
     private _makeOptions(options: CommandisOptions): CommandisOptions {
         return {
             autogenHelp: options.autogenHelp ?? true,
+            helpMention: options.helpMention ?? true,
             commandDir: options.commandDir ?? Deno.cwd() + "/commands",
             readCommands: options.readCommands ?? true,
             eventsDir: options.eventsDir ?? Deno.cwd() + "/events",
             readEvents: options.readEvents ?? true,
             intents: options.intents ?? [Intents.GUILD_MESSAGES, Intents.DIRECT_MESSAGES],
-            prefix: options.prefix ?? "<",
+            prefix: options.prefix ?? "bot!",
             debug: options.debug ?? false,
             hotreload: options.hotreload ?? false
         }
@@ -76,8 +77,12 @@ export class Client extends Corddis {
             var prefix = this.options.prefix ?? ""
             if (msg.data.content.startsWith(prefix)) {
                 let interpreter = new StringReader(msg.data.content.substring(prefix.length));
-                let command = interpreter.readWord()
+                let command = interpreter.readWord() ?? "help"
                 this.commands.find(cmd => cmd.name == command)?.run.call(null, this, new CommandisMessage(msg, this, interpreter))
+            } else {
+                if (!msg.data.mention_everyone && `<@!${this.user?.data.id}>` == msg.data.content) {
+                    this.commands.find(cmd => cmd.name == "help")?.run.call(null, this, new CommandisMessage(msg, this))
+                }
             }
         })
         if (this.options.debug) this.on("debug", console.log)
@@ -97,10 +102,6 @@ export class Client extends Corddis {
         else { text = "Added"; this.commands[index] = command; }
 
         this.emit("debug", `${text} command, ${command.name}`)
-    }
-
-    makeHelp() {
-
     }
 }
 

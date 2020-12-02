@@ -8,6 +8,7 @@ export interface Command {
 
 export interface CommandisOptions {
     autogenHelp?: boolean;
+    helpMention?: boolean;
     commandDir?: string;
     readCommands?: boolean;
     eventsDir?: string;
