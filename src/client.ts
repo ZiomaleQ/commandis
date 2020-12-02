@@ -8,8 +8,7 @@ export class Client extends Corddis {
     files: string[] = [];
     local_events: Event[] = [];
     options: CommandisOptions;
-    hr_commands: Iterator = new Iterator();
-    hr_events: Iterator = new Iterator();
+    hr: Iterator = new Iterator();
     id: number = 0;
     constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
         super(options.token)
@@ -42,13 +41,8 @@ export class Client extends Corddis {
         }
 
         if (this.options.hotreload) {
-            this.hr_commands.iterate(Deno.watchFs(this.options.commandDir ?? Deno.cwd()))
-            this.hr_commands.on("modify", (x: string[]) => x.forEach(async y => await this._modifyCommand.call(this, y)))
-            // this.hr.on("create", (x: string[]) => console.log(`Utworzono: ${x}`))
-            // this.hr.on("remove", (x: string[]) => console.log(`Usunięto: ${x}`))
-            this.hr_events.iterate(Deno.watchFs(this.options.eventsDir ?? Deno.cwd()))
-            this.hr_events.on("modify", (x: string[]) => x.forEach(async y => await this._modifyEvent.call(this, y)))
-
+            this.hr.iterate(Deno.watchFs(this.options.commandDir ?? Deno.cwd()))
+            this.hr.on("modify", (x: string[]) => x.forEach(async y => await this._modifyCommand.call(this, y)))
         }
 
         if (this.options.readEvents) {
@@ -85,40 +79,5 @@ export class Client extends Corddis {
         else { text = "Added"; this.commands[index] = command; }
 
         this.emit("debug", `${text} command, ${command.name}`)
-    }
-
-    async _modifyEvent(path: string) {
-        if (!this.options.readEvents) throw "Events are not red";
-        var random = Math.random().toString(36).substring(2).toString()
-        let event = (await import(`${path}#${random}`)).default as Event
-        var index = this.commands.findIndex(it => it.name == event?.name)
-        if (index < 0 && !event) return
-
-        var text = "Hotreloaded"
-
-        if (index < 0) this.local_events.push(event);
-        else { text = "Added"; this.local_events[index] = event; }
-
-        this.emit("debug", `${text} event, ${event.name}`)
-    }
-
-    async _removeCommand(path: string) {
-        if (!this.options.readCommands) throw "Commands are not red";
-        var random = Math.random().toString(36).substring(2).toString()
-        let command = (await import(`${path}#${random}`)).default as Command
-        var index = this.commands.findIndex(it => it.name == command?.name)
-        if (index < 0) return
-        this.commands.splice(index, 1)
-        this.emit("debug", `Hotreloaded command, ${command.name}`)
-    }
-
-    async _removeEvent(path: string) {
-        if (!this.options.readEvents) throw "Events are not red";
-        var random = Math.random().toString(36).substring(2).toString()
-        let event = (await import(`${path}#${random}`)).default as Event
-        var index = this.commands.findIndex(it => it.name == event?.name)
-        if (index < 0) return
-        this.local_events.splice(index, 1)
-        this.emit("debug", `Hotreloaded event, ${event.name}`)
     }
 }
