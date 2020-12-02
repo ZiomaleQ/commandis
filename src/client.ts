@@ -1,4 +1,4 @@
-import { Client as Corddis, Intents, Message, User } from "../deps.ts";
+import { Client as Corddis, Intents, Message, EmbedBuilder } from "../deps.ts";
 import { Iterator } from "./iterator.ts";
 import { StringReader } from "./stringReader.ts";
 import { CommandisMessage } from "./overrides/CommandisMessage.ts"
@@ -27,7 +27,7 @@ export class Client extends Corddis {
             eventsDir: options.eventsDir ?? Deno.cwd() + "/events",
             readEvents: options.readEvents ?? true,
             intents: options.intents ?? [Intents.GUILD_MESSAGES, Intents.DIRECT_MESSAGES],
-            prefix: options.prefix ?? "!",
+            prefix: options.prefix ?? "<",
             debug: options.debug ?? false,
             hotreload: options.hotreload ?? false
         }
@@ -39,6 +39,23 @@ export class Client extends Corddis {
                 .filter(it => it.isFile && it.name.endsWith(".ts"))
                 .map(async it => import(`file://${this.options.commandDir}/${it.name}`))
                 .forEach(async it => this.commands.push((await it).default as Command));
+        }
+
+        if (this.options.autogenHelp) {
+            this.commands.push({
+                category: "system",
+                hidden: true,
+                description: "Help message",
+                name: "help",
+                run: (client: Client, msg: CommandisMessage) => {
+                    var grouped = groupBy(this.commands.filter((it) => !it.hidden), (it) => it.category)
+                    var categories = Object.keys(grouped)
+                    var embed = new EmbedBuilder();
+                    embed.title("Hello there")
+                    for (let category of categories) embed.field(category, grouped[category].map(it => `\`${it.name}\``).join(", "))
+                    msg.channel.sendMessage({ embed });
+                }
+            } as Command)
         }
 
         if (this.options.hotreload) {
@@ -81,4 +98,16 @@ export class Client extends Corddis {
 
         this.emit("debug", `${text} command, ${command.name}`)
     }
+
+    makeHelp() {
+
+    }
 }
+
+const groupBy = <T, K extends keyof any>(list: T[], getKey: (item: T) => K) =>
+    list.reduce((previous, currentItem) => {
+        const group = getKey(currentItem);
+        if (!previous[group]) previous[group] = [];
+        previous[group].push(currentItem);
+        return previous;
+    }, {} as Record<K, T[]>);

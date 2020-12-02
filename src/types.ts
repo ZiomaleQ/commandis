@@ -2,7 +2,8 @@ export interface Command {
     name: string;
     run: Function;
     description: string;
-    category: string
+    category: string;
+    hidden?: boolean;
 }
 
 export interface CommandisOptions {
