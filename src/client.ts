@@ -1,6 +1,7 @@
 import { Client as Corddis, Intents, Message, User } from "../deps.ts";
 import { Iterator } from "./iterator.ts";
 import { StringReader } from "./stringReader.ts";
+import { CommandisMessage } from "./overrides/CommandisMessage.ts"
 import { Command, CommandisOptions, Event } from "./types.ts";
 
 export class Client extends Corddis {
@@ -59,7 +60,7 @@ export class Client extends Corddis {
             if (msg.data.content.startsWith(prefix)) {
                 let interpreter = new StringReader(msg.data.content.substring(prefix.length));
                 let command = interpreter.readWord()
-                this.commands.find(cmd => cmd.name == command)?.run.call(null, this, msg)
+                this.commands.find(cmd => cmd.name == command)?.run.call(null, this, new CommandisMessage(msg, this, interpreter))
             }
         })
         if (this.options.debug) this.on("debug", console.log)
