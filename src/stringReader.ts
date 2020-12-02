@@ -7,9 +7,6 @@ export class StringReader {
         this.cursor = cursor;
     }
 
-    getText() { return this.text; }
-    getCursor() { return this.cursor; }
-
     getRemaing() { return this.text.substring(this.cursor) }
 
     moveByInt(num = 1) { this.cursor += num; }
@@ -18,7 +15,6 @@ export class StringReader {
     peek() { return this.text.charAt(this.cursor); }
     canRead(num = 1) { return this.cursor + num <= this.text.length; }
 
-    skipMention() { this.cursor += 21 }
     skipSpaces() { while (this.peek().trim() == '' && this.canRead()) { this.moveByInt(); } }
     readChar() {
         this.moveByInt();
@@ -48,12 +44,7 @@ export class StringReader {
     }
 
     isAllowedInInt(ch: string) {
-        return ch == '0' || ch == '1' ||
-            ch == '2' || ch == '3' ||
-            ch == '4' || ch == '5' ||
-            ch == '6' || ch == '7' ||
-            ch == '8' || ch == '9' ||
-            ch == '-' || ch == '+';
+        return ~~ch < 10 || ch == '-' || ch == '+';
     }
 
     isAllowedInPoint(ch: string) { return this.isAllowedInInt(ch) || ch == '.'; }
@@ -73,9 +64,6 @@ export class StringReader {
     }
 
     readBool() {
-        let parsing = this.readWord();
-        if (parsing == 'false') return false;
-        if (parsing == 'true') return true;
-        return undefined;
+        return this.readWord() == "true";
     }
 }

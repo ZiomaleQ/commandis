@@ -12,13 +12,13 @@ export class Client extends Corddis {
     id: number = 0;
     constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
         super(options.token)
-        this.options = this.makeOptions(options)
+        this.options = this._makeOptions(options)
         this.addIntents(...(this.options.intents ?? []))
         this.commands = commands;
         this.local_events = events;
     }
 
-    makeOptions(options: CommandisOptions): CommandisOptions {
+    private _makeOptions(options: CommandisOptions): CommandisOptions {
         return {
             autogenHelp: options.autogenHelp ?? true,
             commandDir: options.commandDir ?? Deno.cwd() + "/commands",
@@ -66,7 +66,7 @@ export class Client extends Corddis {
         return await super.login(token)
     }
 
-    async _modifyCommand(path: string) {
+    private async _modifyCommand(path: string) {
         if (!this.options.readCommands) throw "Commands are not red";
         var random = Math.random().toString(36).substring(2).toString()
         let command = (await import(`${path}#${random}`)).default as Command
