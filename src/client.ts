@@ -80,7 +80,7 @@ export class Client extends Corddis {
                 let command = interpreter.readWord() ?? "help"
                 this.commands.find(cmd => cmd.name == command)?.run.call(null, this, new CommandisMessage(msg, this, interpreter))
             } else {
-                if (!msg.data.mention_everyone && `<@!${this.user?.data.id}>` == msg.data.content) {
+                if (!msg.data.mention_everyone && `<@!${this.user?.data.id}>` == msg.data.content && this.options.helpMention) {
                     this.commands.find(cmd => cmd.name == "help")?.run.call(null, this, new CommandisMessage(msg, this))
                 }
             }
