@@ -37,7 +37,7 @@ export class Client extends Corddis {
         if (this.options.readCommands) {
             [...Deno.readDirSync(this.options.commandDir ?? Deno.cwd())]
                 .filter(it => it.isFile && it.name.endsWith(".ts"))
-                .map(async it => import(`${this.options.commandDir}/${it.name}`))
+                .map(async it => import(`file://${this.options.commandDir}/${it.name}`))
                 .forEach(async it => this.commands.push((await it).default as Command));
         }
 
@@ -50,7 +50,7 @@ export class Client extends Corddis {
             let eventDir = this.options.eventsDir ?? Deno.cwd()
             for (const entry of Deno.readDirSync(eventDir)) {
                 if (!entry.isFile && entry.name.endsWith(".ts")) continue;
-                let event = await import(`${eventDir}/${entry.name}`).then(it => it.default as Event)
+                let event = await import(`file://${eventDir}/${entry.name}`).then(it => it.default as Event)
                 this.on(event.name, event.run.bind(null, this))
             }
         }
