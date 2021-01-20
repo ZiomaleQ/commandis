@@ -7,7 +7,6 @@ import { Command, CommandisOptions, Event } from "./types.ts";
 export class Client extends Corddis {
     private options: CommandisOptions;
     commands: Command[] = [];
-    files: string[] = [];
     local_events: Event[] = [];
     hr: Iterator = new Iterator();
     constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
@@ -87,6 +86,14 @@ export class Client extends Corddis {
         })
         if (this.options.debug) this.on("debug", console.log)
         return await super.login(token)
+    }
+
+    /** Wait for a certain event */
+    async waitFor(eventName: string | symbol): Promise<any> {
+      return await new Promise((resolve) => {
+        const eventFunc = (event: any): void => { resolve(event) }
+        this.once(eventName, eventFunc)
+      })
     }
 
     private async _modifyCommand(path: string) {
