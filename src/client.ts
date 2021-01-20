@@ -35,6 +35,7 @@ export class Client extends Corddis {
     }
 
     async login(token: string = this.options.token ?? ""): Promise<boolean> {
+      if(!super.token) {super.token = (this.options.token = token)}
         if (this.options.readCommands) {
             [...Deno.readDirSync(this.options.commandDir ?? Deno.cwd())]
                 .filter(it => it.isFile && it.name.endsWith(".ts"))
