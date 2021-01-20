@@ -1,9 +1,15 @@
 # Hey!
+
 It's the official bot framework for [corddis](https://deno.land/x/corddis)
 
 # Todo list:
- - High priority:
-    - [ ] Help generator
-    - [ ] Better events
+
+- High priority:
+  - [x] Help generator
+  - [ ] Permissions
+  - [ ] Command aliases
 - Low piority:
-    - [x] empty right now
+  - [ ] Client.waitFor
+
+If u want documentation in Json check out mod.json, it's documentation generated
+from `deno doc`
