@@ -44,11 +44,11 @@ export class Client extends Corddis {
         if (this.options.autogenHelp) {
             this.commands.push({
                 category: "system",
+                name: "help",
                 hidden: true,
                 description: "Help message",
-                name: "help",
                 run: (client: Client, msg: CommandisMessage) => {
-                    var grouped = groupBy(this.commands.filter((it) => !it.hidden), (it) => it.category)
+                    var grouped = groupBy(this.commands.filter(it => !it.hidden), it => it.category)
                     var categories = Object.keys(grouped)
                     var embed = new EmbedBuilder();
                     embed.title("Hello there")
