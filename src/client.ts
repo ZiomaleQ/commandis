@@ -5,12 +5,11 @@ import { CommandisMessage } from "./overrides/CommandisMessage.ts"
 import { Command, CommandisOptions, Event } from "./types.ts";
 
 export class Client extends Corddis {
+    private options: CommandisOptions;
     commands: Command[] = [];
     files: string[] = [];
     local_events: Event[] = [];
-    options: CommandisOptions;
     hr: Iterator = new Iterator();
-    id: number = 0;
     constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
         super(options.token)
         this.options = this._makeOptions(options)
