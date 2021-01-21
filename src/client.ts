@@ -111,6 +111,13 @@ export class Client extends Corddis {
         let command = this.commands.find((cmd) =>
           cmd.name == commandName
         ) as Command;
+
+        let helpWord = interpreter.readWord();
+        if (helpWord == "help") {
+          if (command.help) return msg.reply(command.help);
+        }
+        if (helpWord) interpreter.moveByInt(-helpWord.length);
+
         if (command) {
           if (command.restrictions) {
             if (msg.guild) {
@@ -192,6 +199,7 @@ export class Client extends Corddis {
 
   private async _modifyCommand(path: string) {
     if (!this.options.readCommands) throw "Commands are not red";
+    if (!path.endsWith(".ts")) return;
     var random = Math.random().toString(36).substring(2).toString();
     let command = (await import(`file://${path}#${random}`)).default as Command;
     var index = this.commands.findIndex((it) => it.name == command?.name);

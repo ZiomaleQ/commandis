@@ -1,4 +1,4 @@
-import { PermissionEnum, Snowflake } from "../deps.ts";
+import { EmbedBuilder, PermissionEnum, Snowflake } from "../deps.ts";
 
 export type Snowflakes = Snowflake[] | Snowflake;
 
@@ -9,6 +9,7 @@ export interface Command {
   permissions?: PermissionEnum[];
   description: string;
   hidden?: boolean;
+  help?: EmbedBuilder | string;
   aliases?: string[];
   restrictions?: {
     guild?: Restriction | Snowflakes;
