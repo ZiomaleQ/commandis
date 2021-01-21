@@ -6,6 +6,7 @@ It's the official bot framework for [corddis](https://deno.land/x/corddis)
 
 - High priority:
   - [x] Help generator
+  - [x] Restrictions
   - [ ] Permissions
   - [ ] Command aliases
   - [ ] Errors

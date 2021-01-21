@@ -1,4 +1,6 @@
-import { PermissionEnum } from "../deps.ts";
+import { PermissionEnum, Snowflake } from "../deps.ts";
+
+export type Snowflakes = Snowflake[] | Snowflake;
 
 export interface Command {
   name: string;
@@ -8,6 +10,15 @@ export interface Command {
   description: string;
   hidden?: boolean;
   aliases?: string[];
+  restrictions?: {
+    guild?: Restriction | Snowflakes;
+    users?: Restriction | Snowflakes;
+  };
+}
+
+export interface Restriction {
+  id: Snowflakes;
+  whitelist: boolean;
 }
 
 export interface CommandisOptions {
@@ -22,7 +33,6 @@ export interface CommandisOptions {
   prefix?: string;
   debug?: boolean;
   hotreload?: boolean;
-  language?: string;
 }
 
 export interface Event {
