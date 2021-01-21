@@ -120,11 +120,6 @@ export class Client extends Corddis {
 
         if (command) {
           if (command.restrictions) {
-            console.log(
-              command.restrictions,
-              (msg.guild ?? { id: 1 }).id,
-              msg.author.id,
-            );
             if (msg.guild) {
               if (command.restrictions.guild) {
                 let gr = command.restrictions.guild;
