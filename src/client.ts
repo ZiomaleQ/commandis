@@ -120,6 +120,11 @@ export class Client extends Corddis {
 
         if (command) {
           if (command.restrictions) {
+            console.log(
+              command.restrictions,
+              (msg.guild ?? { id: 1 }).id,
+              msg.author.id,
+            );
             if (msg.guild) {
               if (command.restrictions.guild) {
                 let gr = command.restrictions.guild;
@@ -129,8 +134,8 @@ export class Client extends Corddis {
                     : gr) as Snowflakes),
                 ];
                 if (
-                  ids.find((entry) => entry == msg.guild!!.id) &&
-                  !(gr as Restriction)?.whitelist
+                  !ids.find((entry) => entry == msg.guild!!.id) &&
+                  (gr as Restriction)?.blacklist
                 ) {
                   return msg.reply(
                     `This guild is blacklisted from using command \`${commandName}\``,
@@ -147,7 +152,7 @@ export class Client extends Corddis {
               ];
               if (
                 ids.find((entry) => entry == msg.author.id) &&
-                !(ur as Restriction)?.whitelist
+                (ur as Restriction)?.blacklist
               ) {
                 return msg.reply(
                   `You're blacklisted from using command \`${commandName}\``,

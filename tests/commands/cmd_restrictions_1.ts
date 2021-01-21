@@ -8,11 +8,11 @@ export default {
   restrictions: {
     guild: {
       id: "682660337996267542",
-      whitelist: true,
+      blacklist: true,
     },
     user: {
       id: "344048874656366592",
-      whitelist: true,
+      blacklist: true,
     },
   },
   run: (client: Client, msg: CommandisMessage) => {

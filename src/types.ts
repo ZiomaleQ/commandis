@@ -19,7 +19,7 @@ export interface Command {
 
 export interface Restriction {
   id: Snowflakes;
-  whitelist: boolean;
+  blacklist: boolean;
 }
 
 export interface CommandisOptions {
