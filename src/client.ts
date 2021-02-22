@@ -205,11 +205,11 @@ export class Client extends Corddis {
     var index = this.commands.findIndex((it) => it.name == command?.name);
     if (index < 0 && !command) return;
 
-    var text = "Hotreloaded";
+    var text = "Added";
 
     if (index < 0) this.commands.push(command);
     else {
-      text = "Added";
+      text = "Hotreloaded";
       this.commands[index] = command;
     }
 

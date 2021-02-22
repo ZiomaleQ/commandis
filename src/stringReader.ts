@@ -56,7 +56,7 @@ export class StringReader {
   }
 
   isAllowedInInt(ch: string) {
-    return ~~ch < 10 || ch == "-" || ch == "+";
+    return ~~ch > 0 || (~~ch == 0 && ch == '0') || ch == "-" || ch == "+";
   }
 
   isAllowedInPoint(ch: string) {
