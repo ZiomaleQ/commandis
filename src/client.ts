@@ -1,4 +1,4 @@
-import { Client as Corddis, EmbedBuilder, Intents, Message } from "../deps.ts";
+import { Client as Corddis, EmbedBuilder, Intents, Message, to } from "../deps.ts";
 import { Iterator } from "./iterator.ts";
 import { StringReader } from "./stringReader.ts";
 import { CommandisMessage } from "./overrides/CommandisMessage.ts";
@@ -6,6 +6,7 @@ import {
   Command,
   CommandisOptions,
   Event,
+  EventsNames,
   Restriction,
   Snowflakes,
 } from "./types.ts";
@@ -97,11 +98,11 @@ export class Client extends Corddis {
         let event = await import(`file://${eventDir}/${entry.name}`).then(
           (it) => it.default as Event,
         );
-        this.on(event.name, event.run.bind(null, this));
+        this.events.$attach(to(event.name), event.run.bind(null, this));
       }
     }
 
-    this.on("MESSAGE_CREATE", async (msg: Message) => {
+    this.events.$attachPrepend(to("MESSAGE_CREATE"), async (msg: Message) => {
       var prefix = this.options.prefix ?? "";
       if (msg.data.content.startsWith(prefix)) {
         let interpreter = new StringReader(
@@ -129,7 +130,7 @@ export class Client extends Corddis {
                     : gr) as Snowflakes),
                 ];
                 if (
-                  !ids.find((entry) => entry == msg.guild!!.id) &&
+                  !ids.find((entry) => entry == msg.guild!!.data.id) &&
                   (gr as Restriction)?.blacklist
                 ) {
                   return msg.reply(
@@ -146,7 +147,7 @@ export class Client extends Corddis {
                   : ur) as Snowflakes),
               ];
               if (
-                ids.find((entry) => entry == msg.author.id) &&
+                ids.find((entry) => entry == msg.data.author.id) &&
                 (ur as Restriction)?.blacklist
               ) {
                 return msg.reply(
@@ -183,17 +184,17 @@ export class Client extends Corddis {
         }
       }
     });
-    if (this.options.debug) this.on("debug", console.log);
+    if (this.options.debug) this.events.$attach(to("DEBUG"), console.log);
     return await super.login(token);
   }
 
   /** Wait for a certain event */
-  async waitFor(eventName: string | symbol): Promise<any> {
+  async waitFor(eventName: EventsNames): Promise<any> {
     return await new Promise((resolve) => {
       const eventFunc = (event: any): void => {
         resolve(event);
       };
-      this.once(eventName, eventFunc);
+      this.events.$attachOnce(to(eventName), eventFunc);
     });
   }
 
@@ -213,7 +214,7 @@ export class Client extends Corddis {
       this.commands[index] = command;
     }
 
-    this.emit("debug", `${text} command, ${command.name}`);
+    this.events.post(["DEBUG", `${text} command, ${command.name}`]);
   }
 }
 
