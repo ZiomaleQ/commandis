@@ -1,26 +1,23 @@
-import { Client as Corddis, EmbedBuilder, Intents, Message, to } from "../deps.ts";
+import { Client as Corddis, Intents, Message, to } from "../deps.ts";
 import { Iterator } from "./iterator.ts";
 import { StringReader } from "./stringReader.ts";
-import { CommandisMessage } from "./overrides/CommandisMessage.ts";
+import { CommandContext } from './CommandContext.ts';
 import {
   Command,
   CommandisOptions,
   Event,
-  EventsNames,
-  Restriction,
-  Snowflakes,
+  EventsNames
 } from "./types.ts";
+import { helpCommand, checkCommandRestrictions, parseCommandArgs } from "./utils.ts";
 
 export class Client extends Corddis {
-  private options: CommandisOptions;
+  options: CommandisOptions;
   commands: Command[] = [];
   local_events: Event[] = [];
+  directCommands: Command[] = [];
   hr: Iterator = new Iterator();
-  constructor(
-    options: CommandisOptions = {},
-    commands: Command[] = [],
-    events: Event[] = [],
-  ) {
+
+  constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
     super(options.token);
     this.options = this._makeOptions(options);
     this.addIntents(...(this.options.intents ?? []));
@@ -49,38 +46,15 @@ export class Client extends Corddis {
     if (this.options.readCommands) {
       [...Deno.readDirSync(this.options.commandDir ?? Deno.cwd())]
         .filter((it) => it.isFile && it.name.endsWith(".ts"))
-        .map(async (it) =>
-          import(`file://${this.options.commandDir}/${it.name}`)
-        )
-        .forEach(async (it) =>
+        .map((it) => import(`file://${this.options.commandDir}/${it.name}`))
+        .forEach(async (it) => {
+          const command = (await it).default as Command
           this.commands.push((await it).default as Command)
-        );
+          command.allowDirect && this.directCommands.push(command)
+        });
     }
 
-    if (this.options.autogenHelp) {
-      this.commands.push({
-        category: "system",
-        name: "help",
-        hidden: true,
-        description: "Help message",
-        run: (client: Client, msg: CommandisMessage) => {
-          var grouped = groupBy(
-            this.commands.filter((it) => !it.hidden),
-            (it) => it.category,
-          );
-          var categories = Object.keys(grouped);
-          var embed = new EmbedBuilder();
-          embed.title("Hello there");
-          for (let category of categories) {
-            embed.field(
-              category,
-              grouped[category].map((it) => `\`${it.name}\``).join(", "),
-            );
-          }
-          msg.channel.sendMessage({ embed });
-        },
-      } as Command);
-    }
+    this.options.autogenHelp && this.commands.push(helpCommand as Command)
 
     if (this.options.hotreload) {
       this.hr.iterate(Deno.watchFs(this.options.commandDir ?? Deno.cwd()));
@@ -94,94 +68,45 @@ export class Client extends Corddis {
     if (this.options.readEvents) {
       let eventDir = this.options.eventsDir ?? Deno.cwd();
       for (const entry of Deno.readDirSync(eventDir)) {
-        if (!entry.isFile && entry.name.endsWith(".ts")) continue;
-        let event = await import(`file://${eventDir}/${entry.name}`).then(
-          (it) => it.default as Event,
-        );
+        if (!entry.isFile && !entry.name.endsWith(".ts")) continue;
+        let event = await import(`file://${eventDir}/${entry.name}`).then((it) => it.default as Event);
         this.events.$attach(to(event.name), event.run.bind(null, this));
       }
     }
 
     this.events.$attachPrepend(to("MESSAGE_CREATE"), async (msg: Message) => {
-      var prefix = this.options.prefix ?? "";
+      const prefix = this.options.prefix ?? "";
+      let interpreter: StringReader, command: Command | undefined, commandName: string
+
+      //If ping execute help command
+      if (!msg.data.mention_everyone && msg.data.content.includes(`<@!${this.user?.data.id}>`) && this.options.helpMention) {
+        //User can make help command by themselves, just to catch that command too~
+        command = this.commands.find((cmd) => cmd.name == "help")
+      }
+
       if (msg.data.content.startsWith(prefix)) {
-        let interpreter = new StringReader(
-          msg.data.content.substring(prefix.length),
-        );
-        let commandName = interpreter.readWord() ?? "help";
-        let command = this.commands.find((cmd) =>
-          cmd.name == commandName
-        ) as Command;
+        interpreter = new StringReader(msg.data.content, prefix.length);
+        commandName = interpreter.readWord() ?? "help";
+        command = this.commands.find((cmd) => cmd.name == commandName);
 
         let helpWord = interpreter.readWord();
-        if (helpWord == "help") {
-          if (command.help) return msg.reply(command.help);
-        }
-        if (helpWord) interpreter.moveByInt(-helpWord.length);
 
-        if (command) {
-          if (command.restrictions) {
-            if (msg.guild) {
-              if (command.restrictions.guild) {
-                let gr = command.restrictions.guild;
-                let ids = [
-                  ...(((gr as Restriction).id != undefined
-                    ? (gr as Restriction).id
-                    : gr) as Snowflakes),
-                ];
-                if (
-                  !ids.find((entry) => entry == msg.guild!!.data.id) &&
-                  (gr as Restriction)?.blacklist
-                ) {
-                  return msg.reply(
-                    `This guild is blacklisted from using command \`${commandName}\``,
-                  );
-                }
-              }
-            }
-            if (command.restrictions.users) {
-              let ur = command.restrictions.users;
-              let ids = [
-                ...(((ur as Restriction).id != undefined
-                  ? (ur as Restriction).id
-                  : ur) as Snowflakes),
-              ];
-              if (
-                ids.find((entry) => entry == msg.data.author.id) &&
-                (ur as Restriction)?.blacklist
-              ) {
-                return msg.reply(
-                  `You're blacklisted from using command \`${commandName}\``,
-                );
-              }
-            }
-            command.run.call(
-              null,
-              this,
-              new CommandisMessage(msg, this, interpreter),
-            );
-          } else {
-            command.run.call(
-              null,
-              this,
-              new CommandisMessage(msg, this, interpreter),
-            );
-          }
-        } else {
-          return msg.reply(`No such command as \`${commandName}\``);
-        }
+        //Help for desired command
+        if (helpWord == "help" && command?.help) return typeof command.help === "string" ? msg.reply(command.help) : msg.reply(command.help);
+        if (helpWord?.length) interpreter.moveByInt(-helpWord.length);
+
       } else {
-        if (
-          !msg.data.mention_everyone &&
-          `<@!${this.user?.data.id}>` == msg.data.content &&
-          this.options.helpMention
-        ) {
-          this.commands.find((cmd) => cmd.name == "help")?.run.call(
-            null,
-            this,
-            new CommandisMessage(msg, this),
-          );
-        }
+        interpreter = new StringReader(msg.data.content);
+        const commandName = interpreter.readWord()
+        if (!command) command = commandName ? this.directCommands.find(command => command.name === commandName) : undefined
+      }
+
+      //Command matched
+      if (command) {
+        const canExec = command.restrictions ? await checkCommandRestrictions(command, msg) : true
+        if (canExec)
+          command.run.call(null, this, new CommandContext(msg, this, command, await parseCommandArgs(command, msg, interpreter)))
+        else return
       }
     });
     if (this.options.debug) this.events.$attach(to("DEBUG"), console.log);
@@ -191,10 +116,7 @@ export class Client extends Corddis {
   /** Wait for a certain event */
   async waitFor(eventName: EventsNames): Promise<any> {
     return await new Promise((resolve) => {
-      const eventFunc = (event: any): void => {
-        resolve(event);
-      };
-      this.events.$attachOnce(to(eventName), eventFunc);
+      this.events.$attachOnce(to(eventName), resolve);
     });
   }
 
@@ -217,11 +139,3 @@ export class Client extends Corddis {
     this.events.post(["DEBUG", `${text} command, ${command.name}`]);
   }
 }
-
-const groupBy = <T, K extends keyof any>(list: T[], getKey: (item: T) => K) =>
-  list.reduce((previous, currentItem) => {
-    const group = getKey(currentItem);
-    if (!previous[group]) previous[group] = [];
-    previous[group].push(currentItem);
-    return previous;
-  }, {} as Record<K, T[]>);

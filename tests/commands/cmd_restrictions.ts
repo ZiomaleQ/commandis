@@ -1,5 +1,5 @@
 import { Client } from "../../src/client.ts";
-import { CommandisMessage } from "../../src/overrides/CommandisMessage.ts";
+import { CommandContext } from '../../src/CommandContext.ts';
 
 export default {
   name: "test1",
@@ -9,7 +9,7 @@ export default {
     guild: "682660337996267542",
     user: "344048874656366592",
   },
-  run: (client: Client, msg: CommandisMessage) => {
+  run: (client: Client, msg: CommandContext) => {
     msg.reply("No elo ci");
   },
 };

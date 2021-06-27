@@ -1,24 +1,42 @@
 import { EmbedBuilder, PermissionEnum, Snowflake } from "../deps.ts";
 
-export type Snowflakes = Snowflake[] | Snowflake;
-
 export interface Command {
   name: string;
   run: Function;
-  category: string;
+  category?: string;
+  parameters?: CommandParameter[]
   permissions?: PermissionEnum[];
   description: string;
   hidden?: boolean;
   help?: EmbedBuilder | string;
   aliases?: string[];
+  allowDirect?: boolean;
+  allowDm?: boolean;
   restrictions?: {
-    guild?: Restriction | Snowflakes;
-    users?: Restriction | Snowflakes;
+    guild?: Snowflake | Snowflake[];
+    users?: Snowflake | Snowflake[];
   };
 }
 
+export interface CommandParameter {
+  name: string
+  type: CommandParameterType
+  /** If you want to set nullable value as default property set it to `null` */
+  default?: any
+  /** If `default` property is set, defaults to `false`. In any other case value is true. */
+  required?: boolean
+}
+
+export interface CommandArguments extends CommandParameter {
+  value?: any
+}
+
+export enum CommandParameterType {
+  BOOL, INT, FLOAT, STRING, QUOTED, REST
+}
+
 export interface Restriction {
-  id: Snowflakes;
+  id: Snowflake | Snowflake[];
   blacklist: boolean;
 }
 
