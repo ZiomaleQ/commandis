@@ -1,30 +1,187 @@
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/constants.ts:102:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:69:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:170:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<T>(...ops[0m[35m[0m: [[0m[38;5;12m_1.Operator[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>, ...[0m[38;5;12m_1.Operator[0m<[0m[38;5;14many[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>[]]): [0m[38;5;12m_1.Operator.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m> | [0m[38;5;12m_1.Operator.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:163:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<T>(...ops[0m[35m[0m: [[0m[38;5;12m_1.Operator[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>, ...[0m[38;5;12m_1.Operator[0m<[0m[38;5;14many[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>[]]): [0m[38;5;12m_1.Operator.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:154:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, E, F, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m, CtxResultOp4 = [0m[38;5;14many[0m, CtxResultOp5 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>, op4[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mD[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp4[0m>, op5[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mE[0m, [0m[38;5;12mF[0m, [0m[38;5;12mCtxResultOp5[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mF[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m | [0m[38;5;12mCtxResultOp4[0m | [0m[38;5;12mCtxResultOp5[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:147:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, E, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m, CtxResultOp4 = [0m[38;5;14many[0m, CtxResultOp5 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>, op4[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mD[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp4[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m | [0m[38;5;12mCtxResultOp4[0m | [0m[38;5;12mCtxResultOp5[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:141:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;14many[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;14many[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;14many[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:136:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:127:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, E, F, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m, CtxResultOp4 = [0m[38;5;14many[0m, CtxResultOp5 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>, op4[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mD[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp4[0m>, op5[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mE[0m, [0m[38;5;12mF[0m, [0m[38;5;12mCtxResultOp5[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mF[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m | [0m[38;5;12mCtxResultOp4[0m | [0m[38;5;12mCtxResultOp5[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:120:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, E, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m, CtxResultOp4 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>, op4[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mD[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp4[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m | [0m[38;5;12mCtxResultOp4[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:113:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, E, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m, CtxResultOp4 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>, op4[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mD[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp4[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mE[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m | [0m[38;5;12mCtxResultOp4[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:107:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C, D, CtxResultOp1 = [0m[38;5;14many[0m, CtxResultOp2 = [0m[38;5;14many[0m, CtxResultOp3 = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResultOp1[0m>, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResultOp2[0m>, op3[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mC[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp3[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mD[0m, [0m[38;5;12mCtxResultOp1[0m | [0m[38;5;12mCtxResultOp2[0m | [0m[38;5;12mCtxResultOp3[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:101:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[38;5;14mboolean[0m, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[38;5;14mboolean[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mA[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:97:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B extends [0m[38;5;12mA[0m>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[38;5;14mboolean[0m, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[31m<UNIMPLEMENTED>[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:93:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B extends [0m[38;5;12mA[0m>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[31m<UNIMPLEMENTED>[0m, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mB[0m) => [0m[38;5;14mboolean[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:89:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B extends [0m[38;5;12mA[0m, C extends [0m[38;5;12mB[0m>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[31m<UNIMPLEMENTED>[0m, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mB[0m) => [0m[31m<UNIMPLEMENTED>[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mC[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:85:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, CtxResult = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[38;5;14mboolean[0m, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:81:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B extends [0m[38;5;12mA[0m, C, CtxResult = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mA[0m) => [0m[31m<UNIMPLEMENTED>[0m, op2[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mB[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResult[0m>): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:77:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, CtxResult = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mB[0m) => [0m[38;5;14mboolean[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/compose.ts:73:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mcompose[0m<A, B, C extends [0m[38;5;12mB[0m, CtxResult = [0m[38;5;14many[0m>(op1[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗[0m<[0m[38;5;12mA[0m, [0m[38;5;12mB[0m, [0m[38;5;12mCtxResult[0m>, op2[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mB[0m) => [0m[31m<UNIMPLEMENTED>[0m): [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mA[0m, [0m[38;5;12mC[0m, [0m[38;5;12mCtxResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/invokeOperator.ts:11:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1minvokeOperator[0m<T, U, CtxResult>(op[0m[35m[0m: [0m[38;5;12m_1.Operator.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m>, data[0m[35m[0m: [0m[38;5;12mT[0m, isPost[0m[35m?[0m: [0m[38;5;11mtrue[0m): [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/invokeOperator.ts:12:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1minvokeOperator[0m<T>(op[0m[35m[0m: [0m[38;5;12m_1.Operator.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;14many[0m>, data[0m[35m[0m: [0m[38;5;12mT[0m, isPost[0m[35m?[0m: [0m[38;5;11mtrue[0m): [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;14many[0m, [0m[38;5;14many[0m> | [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;14many[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/invokeOperator.ts:10:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1minvokeOperator[0m<T>(op[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[38;5;14mboolean[0m, data[0m[35m[0m: [0m[38;5;12mT[0m): [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;12mT[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/invokeOperator.ts:9:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1minvokeOperator[0m<T, U extends [0m[38;5;12mT[0m>(op[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[31m<UNIMPLEMENTED>[0m, data[0m[35m[0m: [0m[38;5;12mT[0m): [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;12mU[0m, [0m[38;5;14mnever[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/invokeOperator.ts:8:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1minvokeOperator[0m<T, U, CtxResult>(op[0m[35m[0m: [0m[38;5;12m_1.Operator.f╬╗.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m>, data[0m[35m[0m: [0m[38;5;12mT[0m, isPost[0m[35m?[0m: [0m[38;5;11mtrue[0m): [0m[38;5;12m_1.Operator.f╬╗.Result[0m<[0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m>
+  [0m[38;5;8mInvoke any type of stateless operator and return as if it was a f╬╗.[0m
+  [0m[38;5;8mIntended to be used alongside Evt.prototype.getStatelessOp()[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/tools/typeSafety/matchVoid.ts:16:0 
+
+[0m[0m[35m[0m[0m[35mfunction[0m[0m[35m[0m [0m[1mmatchVoid[0m(o[0m[35m[0m: [0m[38;5;14many[0m): [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mUnlike undefined or null, testing o !== void[0m
+  [0m[38;5;8mwill not restrict the type.[0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mExample:[0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mdeclare o: { p: string; } | void;[0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mmatchVoid(o)?null:o.p <== Type inference ok[0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mMatch void[0m
+  [0m[38;5;8m@param o type of o should be a union of type containing void[0m
+  [0m[38;5;8m@returns true if o is undefined[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:103:0 
 
 [0m[0m[35mconst[0m [0m[1mChannelStructures[0m: [0m[38;5;12mNumberDictionaryType[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/constants.ts:7:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:7:0 
 
 [0m[0m[35mconst[0m [0m[1mConstants[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/constants.ts:16:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/Ctx.ts:172:0 
+
+[0m[0m[35mconst[0m [0m[1mCtx[0m: { prototype: [0m[38;5;12mCtx[0m<[0m[38;5;14many[0m>; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/Evt.ts:936:0 
+
+[0m[0m[35mconst[0m [0m[1mEvt[0m: { setDefaultMaxHandlers(n[0m[35m[0m: [0m[38;5;14mnumber[0m): [0m[38;5;14mvoid[0m; prototype: [0m[38;5;12mEvt[0m<[0m[38;5;14many[0m>; create: typeof create; newCtx: typeof newCtx; merge: typeof merge; from: typeof from; useEffect: typeof useEffect; getCtx: [0m[38;5;12mReturnType[0m<typeof getCtxFactory>; loosenType: typeof loosenType; factorize: typeof factorize; asPostable: typeof asPostable; asyncPipe: typeof asyncPipe; asNonPostable: typeof asNonPostable; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:16:0 
 
 [0m[0m[35mconst[0m [0m[1mIntents[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/constants.ts:34:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:34:0 
 
 [0m[0m[35mconst[0m [0m[1mPermissions[0m: [0m[38;5;12mDictionaryType[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/channel.ts:6:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/StatefulEvt.ts:133:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mChannel[0m [0m[35mextends[0m Base
+[0m[0m[35mconst[0m [0m[1mStatefulEvt[0m: { prototype: [0m[38;5;12mStatefulEvt[0m<[0m[38;5;14many[0m>; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/genericOperators/nonNullable.ts:4:0 
+
+[0m[0m[35mconst[0m [0m[1mnonNullable[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/genericOperators/throttleTime.ts:3:0 
+
+[0m[0m[35mconst[0m [0m[1mthrottleTime[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/util/genericOperators/to.ts:19:0 
+
+[0m[0m[35mconst[0m [0m[1mto[0m
+  [0m[38;5;8mOperator that helps emulate an EventEmitter with EVT[0m
+  [0m[38;5;8mSee https://stackblitz.com/edit/evt-honvv3?file=index.ts [0m
+  [0m[38;5;8mor https://docs.evt.land/extending_evt[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/EventTargetLike.ts:4:0 
+
+[0m[0m[35mconst[0m [0m[1mz_2[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/CtxLike.ts:8:0 
+
+[0m[0m[35mconst[0m [0m[1mz_3[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/Operator.ts:5:0 
+
+[0m[0m[35mconst[0m [0m[1mz_f1[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/cache.ts:21:0 
+
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mBaseManager[0m [0m[35mextends[0m Cache
+
+  [0m[35m[0m[0m[35mconstructor[0m(max[0m[35m[0m: [0m[38;5;14mnumber[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m)
+  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/channel.ts:5:0 
+
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mChannel[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mChannelType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m?[0m: [0m[38;5;12mGuild[0m)
+  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mChannelType[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m?[0m: [0m[38;5;12mGuild[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mChannelType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mupdateBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mChannelType[0m): [0m[38;5;14mvoid[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mDeletes a channel.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1medit[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mChannelModifyType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mChannel[0m>
@@ -36,17 +193,19 @@
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mClient[0m [0m[35mextends[0m Corddis
 
   [0m[35m[0m[0m[35mconstructor[0m(options[0m[35m[0m: [0m[38;5;12mCommandisOptions[0m, commands[0m[35m[0m: [0m[38;5;12mCommand[0m[], events[0m[35m[0m: [0m[38;5;12mEvent[0m[])
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1moptions[0m[0m[35m[0m: [0m[38;5;12mCommandisOptions[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcommands[0m[0m[35m[0m: [0m[38;5;12mCommand[0m[]
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mlocal_events[0m[0m[35m[0m: [0m[38;5;12mEvent[0m[]
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdirectCommands[0m[0m[35m[0m: [0m[38;5;12mCommand[0m[]
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mhr[0m[0m[35m[0m: [0m[38;5;12mIterator[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mlogin[0m[0m[35m[0m(token[0m[35m[0m: [0m[38;5;14mstring[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mLogin to and set up discord client[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mwaitFor[0m[0m[35m[0m(eventName[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14msymbol[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14many[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mwaitFor[0m[0m[35m[0m(eventName[0m[35m[0m: [0m[38;5;12mEventsNames[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14many[0m>
     [0m[38;5;8mWait for a certain event[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/client/client.ts:18:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/client/client.ts:18:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mClient[0m [0m[35mextends[0m EventEmitter
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mClient[0m
   [0m[38;5;8mClient which communicates with gateway and manages REST API communication.[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(token[0m[35m[0m: [0m[38;5;14mstring[0m, ...intents[0m[35m[0m: [0m[38;5;14mnumber[0m[])
@@ -60,23 +219,26 @@
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mstatus[0m[0m[35m[0m: [0m[38;5;12mStatusType[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mready[0m[0m[35m[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mlastReq[0m[0m[35m[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mintentHandlers[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;14mstring[0m, [0m[35m[0m(gateway[0m[35m[0m: [0m[38;5;12mGateway[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, data[0m[35m[0m: [0m[38;5;14many[0m) => [0m[38;5;12mPromise[0m<[0m[38;5;14many[0m>>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mmobile[0m[0m[35m[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mshardsCount[0m[0m[35m[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mshards[0m[0m[35m[0m: [0m[38;5;12mGateway[0m[]
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mslashCommands[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mApplicationCommandRootType[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollectors_id[0m[0m[35m[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollectors[0m[0m[35m[0m: [0m[38;5;12mMessageCollector[0m[]
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollectors[0m[0m[35m[0m: [0m[38;5;12mCollector[0m<[0m[38;5;14many[0m>[]
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mevents[0m[0m[35m[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msleep[0m[0m[35m[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35mget [0m[0m[35m[0m[0m[1mguilds[0m[0m[35m[0m(): [0m[38;5;12mGuildManager[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35mget [0m[0m[35m[0m[0m[1musers[0m[0m[35m[0m(): [0m[38;5;12mUserManager[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1maddIntents[0m[0m[35m[0m(...intent[0m[35m[0m: [0m[38;5;14mnumber[0m[]): [0m[38;5;12mClient[0m
     [0m[38;5;8mAdds intents to client[0m
     [0m[38;5;8m@return current client instance[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetCache[0m[0m[35m[0m(key[0m[35m[0m: [0m[38;5;12mCacheEnum[0m, value[0m[35m[0m: [0m[38;5;14mnumber[0m)
     [0m[38;5;8mSets selected cache capacity to specifed value.[0m
     [0m[38;5;8m0 is infinity, -1 and less disables cache entirely.[0m
+    [0m[38;5;8mNote: when changing capacity cache is cleared[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetShards[0m[0m[35m[0m(shards[0m[35m[0m: [0m[38;5;14mnumber[0m)
     [0m[38;5;8mSets number of shards to spawn.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_fetch[0m[0m[35m[0m(method[0m[35m[0m: [0m[38;5;14mstring[0m, path[0m[35m[0m: [0m[38;5;14mstring[0m, body[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;12mFormData[0m | [0m[38;5;14mnull[0m, json[0m[35m[0m, contentType[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14mboolean[0m, headers[0m[35m[0m: [0m[38;5;14many[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mT[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_fetch[0m[0m[35m[0m(method[0m[35m[0m: [0m[38;5;14mstring[0m, path[0m[35m[0m: [0m[38;5;14mstring[0m, body[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;12mFormData[0m | [0m[38;5;14mnull[0m, json[0m[35m[0m, contentType[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14mboolean[0m, headers[0m[35m[0m: [0m[38;5;12mDictionaryType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mT[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_performReq[0m[0m[35m[0m(path[0m[35m[0m: [0m[38;5;14mstring[0m, req[0m[35m[0m: [0m[38;5;12mRequestInit[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mResponse[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mlogin[0m[0m[35m[0m(token[0m[35m[0m: [0m[38;5;14mstring[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mLogins with a certain token[0m
@@ -84,9 +246,6 @@
     [0m[38;5;8mSets game status to all shards.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1msetStatus[0m[0m[35m[0m(status[0m[35m[0m: [0m[38;5;12mStatusType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mStatusType[0m>
     [0m[38;5;8mSets custom presence to all shards.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mget[0m[0m[35m[0m(entity[0m[35m[0m: [0m[38;5;12mEntityType[0m, id[0m[35m[0m: [0m[38;5;12mSnowflake[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mUser[0m | [0m[38;5;12mGuild[0m>
-    [0m[38;5;8mFetches entities from Discord API[0m
-    [0m[38;5;8m     client.get(EntityType.GUILD, "id") as Guild[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mme[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;12mMe[0m>
     [0m[38;5;8mGets current user as Me class[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchInvite[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;14mstring[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mInvite[0m>
@@ -95,23 +254,41 @@
     [0m[38;5;8mDeletes a invite[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mregisterSlashCommand[0m[0m[35m[0m(command[0m[35m[0m: [0m[38;5;12mApplicationCommandRootType[0m, guildID[0m[35m?[0m: [0m[38;5;12mSnowflake[0m)
     [0m[38;5;8mRegisters a slash command.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mregisterOverwriteCommandBulk[0m[0m[35m[0m(command[0m[35m[0m: [0m[38;5;12mApplicationCommandRootType[0m[], guildID[0m[35m?[0m: [0m[38;5;12mSnowflake[0m)
+    [0m[38;5;8mOverwrites a bunch of slash commands.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1munregisterSlashCommand[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, guildID[0m[35m?[0m: [0m[38;5;12mSnowflake[0m)
     [0m[38;5;8mUnregisters a slash command.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchSlashCommands[0m[0m[35m[0m(guildID[0m[35m?[0m: [0m[38;5;12mSnowflake[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mApplicationCommandRootType[0m[]>
     [0m[38;5;8mFetches slash commands.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1memit[0m[0m[35m[0m(name[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14msymbol[0m, ...values[0m[35m[0m: [0m[38;5;14many[0m[]): [0m[38;5;14mboolean[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mregisterCollector[0m[0m[35m[0m(collector[0m[35m[0m: [0m[38;5;12mMessageCollector[0m): [0m[38;5;12mMessageCollector[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mregisterCollector[0m[0m[35m[0m(collector[0m[35m[0m: [0m[38;5;12mCollector[0m<[0m[38;5;12mT[0m>): [0m[38;5;12mCollector[0m<[0m[38;5;12mT[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mremoveCollector[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;14mnumber[0m, done[0m[35m[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/overrides/CommandisMessage.ts:5:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/collector.ts:8:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mCommandisMessage[0m [0m[35mextends[0m Message
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mCollector[0m<T> [0m[35mextends[0m EventEmitter
 
-  [0m[35m[0m[0m[35mconstructor[0m(message[0m[35m[0m: [0m[38;5;12mMessage[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, stringReader[0m[35m?[0m: [0m[38;5;12mStringReader[0m)
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mstringReader[0m[0m[35m[0m: [0m[38;5;12mStringReader[0m
+  [0m[35m[0m[0m[35mconstructor[0m(event[0m[35m[0m: [0m[38;5;14mstring[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, id[0m[35m[0m: [0m[38;5;14mnumber[0m, listener[0m[35m[0m: [0m[35m[0m(entity[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[38;5;14mboolean[0m, options[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m)
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollected[0m[0m[35m[0m: [0m[38;5;12mT[0m[]
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mid[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mevent[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1moptionsBase[0m[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mworking[0m[0m[35m[0m: [0m[38;5;14mboolean[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mlistener[0m[0m[35m[0m: [0m[35m[0m(event[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[38;5;14mboolean[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35mget [0m[0m[35m[0m[0m[1moptions[0m[0m[35m[0m(): [0m[38;5;12mCollectorOptions[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollect[0m[0m[35m[0m(...data[0m[35m[0m: [0m[38;5;12mT[0m[])
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mend[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/embed.ts:4:0 
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/CommandContext.ts:5:0 
+
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mCommandContext[0m [0m[35mextends[0m Message
+
+  [0m[35m[0m[0m[35mconstructor[0m(message[0m[35m[0m: [0m[38;5;12mMessage[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, command[0m[35m[0m: [0m[38;5;12mCommand[0m, args[0m[35m[0m: [0m[38;5;14many[0m[])
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcommand[0m[0m[35m[0m: [0m[38;5;12mCommand[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1margs[0m[0m[35m[0m: [0m[38;5;14many[0m[]
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/embed.ts:4:0 
 
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mEmbedBuilder[0m
   [0m[38;5;8mBuilder for message embeds.[0m
@@ -140,17 +317,13 @@
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mend[0m[0m[35m[0m()
     [0m[38;5;8mGenerates an embed.[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/emoji.ts:6:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/emoji.ts:5:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mEmoji[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mEmoji[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mEmojiType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m?[0m: [0m[38;5;12mGuild[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mEmojiType[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m | [0m[38;5;14mundefined[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mEmojiType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mupdateBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mEmojiType[0m): [0m[38;5;14mvoid[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m?[0m: [0m[38;5;12mGuild[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mDeletes a emoji.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mmodify[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mEmojiEditType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mEmoji[0m>
@@ -158,41 +331,22 @@
     [0m[38;5;8m@return edited emoji[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/guild.ts:21:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/guild.ts:19:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mGuild[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mGuild[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mGuildType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mGuildType[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1minvites[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mInvite[0m>
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mmembers[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mGuildMember[0m>
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mchannels[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mChannel[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1minvites[0m[0m[35m[0m: [0m[38;5;12mInvitesManager[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mmembers[0m[0m[35m[0m: [0m[38;5;12mGuildMemberManager[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mchannels[0m[0m[35m[0m: [0m[38;5;12mChannelsManager[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mroles[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mRole[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtemplate[0m[0m[35m?[0m: [0m[38;5;12mTemplate[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mgateway[0m[0m[35m[0m: [0m[38;5;12mGateway[0m | [0m[38;5;14mundefined[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mgateway[0m[0m[35m?[0m: [0m[38;5;12mGateway[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mvoice[0m[0m[35m[0m: [0m[38;5;12mVoice[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mslashCommands[0m[0m[35m[0m: [0m[38;5;12mMap[0m<[0m[38;5;12mSnowflake[0m, [0m[38;5;12mApplicationCommandRootType[0m>
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mGuildType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mupdateBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mGuildType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mupdate[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mGuildUpdateType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mGuild[0m>
-    [0m[38;5;8mUpdates a guild.[0m
-    [0m[38;5;8m@return updated guild[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mDeletes a guild.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchChannels[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;12mChannel[0m[]>
-    [0m[38;5;8mFetches all channels in guild (or gets them from cache).[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchMembers[0m[0m[35m[0m(limit[0m[35m[0m, after[0m[35m[0m: [0m[38;5;12mSnowflake[0m, refresh[0m[35m[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mGuildMember[0m[]>
-    [0m[38;5;8mFetches all members from guild.[0m
-    [0m[38;5;8m@param refresh chooses whether to update the cache or not[0m
-    [0m[38;5;8m@param limit limit of members to fetch[0m
-    [0m[38;5;8m@param after after which member to fetch[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mget[0m[0m[35m[0m(type[0m[35m[0m: [0m[38;5;12mEntityType[0m, id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, refresh[0m[35m[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mGuildMember[0m | [0m[38;5;12mChannel[0m | [0m[38;5;12mRole[0m | [0m[38;5;14mundefined[0m>
-    [0m[38;5;8mFetches guild entites from Discord API[0m
-    [0m[38;5;8m@param type type of entity to fetch[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1misUser[0m[0m[35m[0m(item[0m[35m[0m: [0m[38;5;14many[0m): [0m[31m<UNIMPLEMENTED>[0m
-    [0m[38;5;8mChecks if the item is a user.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mcreateChannel[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mChannelCreateType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mChannel[0m>
     [0m[38;5;8mCreates a channel.[0m
     [0m[38;5;8m@return created channel[0m
@@ -202,8 +356,9 @@
     [0m[38;5;8mFetches guild template.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mcreateTemplate[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mTemplateCreateType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mTemplate[0m>
     [0m[38;5;8mCreates a template.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdeleteTemplate[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdeleteTemplate[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;12mTemplate[0m | [0m[38;5;14mundefined[0m>
     [0m[38;5;8mDeletes template[0m
+    [0m[38;5;8m@returns deleted template or undefined if there was no template[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1micon[0m[0m[35m[0m(attr[0m[35m[0m: [0m[38;5;12mIconAttributesType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mstring[0m>
     [0m[38;5;8mGenerates a guild icon URL.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mleave[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
@@ -217,40 +372,33 @@
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mnickname[0m[0m[35m[0m(nick[0m[35m[0m: [0m[38;5;14mstring[0m, id[0m[35m?[0m: [0m[38;5;12mSnowflake[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mChanges a bot or other member nickname.[0m
     [0m[38;5;8m@param nick nickname[0m
-    [0m[38;5;8m@param id member (user) ID to change, defaults to bot[0m
+    [0m[38;5;8m@param id member (user) ID to change, defaults to client id[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mcreateRole[0m[0m[35m[0m(role[0m[35m[0m: [0m[38;5;12mRoleEditType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mRoleType[0m>
     [0m[38;5;8mCreates a role.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1meditRole[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, role[0m[35m[0m: [0m[38;5;12mRoleEditType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mRole[0m>
     [0m[38;5;8mEdits a role.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdeleteRole[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mEdits a role.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchInvites[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;12mInvite[0m[]>
-    [0m[38;5;8mFetches all guild invites.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1maddRole[0m[0m[35m[0m(member_id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, role_id[0m[35m[0m: [0m[38;5;12mSnowflake[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mAdds a new role to member.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mcreateEmoji[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mNewEmojiType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mEmoji[0m>
     [0m[38;5;8mCreates a new emoji.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mconnectVoice[0m[0m[35m[0m(channel_id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, self_mute[0m[35m[0m: [0m[38;5;14mboolean[0m, self_deaf[0m[35m[0m: [0m[38;5;14mboolean[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
-    [0m[38;5;8mConnects bot to selected guild voice channel.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mregisterSlashCommand[0m[0m[35m[0m(command[0m[35m[0m: [0m[38;5;12mApplicationCommandRootType[0m)
     [0m[38;5;8mRegisters a slash command.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1munregisterSlashCommand[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m)
     [0m[38;5;8mUnregisters a slash command.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchSlashCommands[0m[0m[35m[0m()
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfetchSlashCommands[0m[0m[35m[0m(refresh[0m[35m[0m)
     [0m[38;5;8mFetches slash commands.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/guildMember.ts:9:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/guildMember.ts:8:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mGuildMember[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mGuildMember[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mGuildMemberType[0m, guild[0m[35m[0m: [0m[38;5;12mGuild[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mGuildMemberType[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpresence[0m[0m[35m[0m: [0m[38;5;12mPresenceType[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mGuildMemberType[0m): [0m[38;5;14mvoid[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mhasPermission[0m[0m[35m[0m(permission[0m[35m[0m: [0m[38;5;12mPermissionEnum[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mChecks if member has permission to do something.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mnickname[0m[0m[35m[0m(name[0m[35m[0m: [0m[38;5;14mstring[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
@@ -259,34 +407,54 @@
     [0m[38;5;8mAdds role to member.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/invite.ts:6:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/interaction.ts:7:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mInvite[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mInteraction[0m
+
+  [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mInteractionType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m[0m: [0m[38;5;12mGuild[0m)
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mInteractionType[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mInteractionApplicationCommandCallbackDataType[0m)
+    [0m[38;5;8mReplies to a slash command interaction with message.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1msendResponse[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mInteractionResponseType[0m)
+    [0m[38;5;8mSends initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1meditResponse[0m[0m[35m[0m(response[0m[35m[0m: [0m[38;5;12mInteractionApplicationCommandCallbackDataType[0m)
+    [0m[38;5;8mEdits initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdeleteResponse[0m[0m[35m[0m()
+    [0m[38;5;8mDeletes initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1msendFollowup[0m[0m[35m[0m(response[0m[35m[0m: [0m[38;5;12mInteractionApplicationCommandCallbackDataType[0m)
+    [0m[38;5;8mSends initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1meditFollowup[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m, response[0m[35m[0m: [0m[38;5;12mInteractionApplicationCommandCallbackDataType[0m)
+    [0m[38;5;8mEdits initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdeleteFollowup[0m[0m[35m[0m(id[0m[35m[0m: [0m[38;5;12mSnowflake[0m)
+    [0m[38;5;8mEdits initial response to a slash command interaction.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/invite.ts:4:0 
+
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mInvite[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mInviteType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m?[0m: [0m[38;5;12mGuild[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mInviteType[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m | [0m[38;5;14mundefined[0m
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mInviteType[0m): [0m[38;5;14mvoid[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m?[0m: [0m[38;5;12mGuild[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;12mInvite[0m>
     [0m[38;5;8mDeletes a invite.[0m
     [0m[38;5;8m@return deleted invite[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/message.ts:12:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/message.ts:11:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mMessage[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mMessage[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mMessageType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m, channel[0m[35m[0m: [0m[38;5;12mNewsChannel[0m | [0m[38;5;12mTextChannel[0m, guild[0m[35m?[0m: [0m[38;5;12mGuild[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mMessageType[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mchannel[0m[0m[35m[0m: [0m[38;5;12mNewsChannel[0m | [0m[38;5;12mTextChannel[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m?[0m: [0m[38;5;12mGuild[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mMessageType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mupdateBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mMessageType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(content[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;12mEmbedType[0m | [0m[38;5;12mEmbedBuilder[0m, reply[0m[35m[0m, mention[0m[35m[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(content[0m[35m[0m: [0m[38;5;14mstring[0m, reply[0m[35m?[0m: [0m[38;5;14mboolean[0m, mention[0m[35m?[0m: [0m[38;5;14mboolean[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
     [0m[38;5;8mReplies to a message with some text content or an embed.[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(content[0m[35m[0m: [0m[38;5;12mEmbedType[0m | [0m[38;5;12mEmbedBuilder[0m, reply[0m[35m?[0m: [0m[38;5;14mboolean[0m, mention[0m[35m?[0m: [0m[38;5;14mboolean[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(content[0m[35m[0m: ([0m[38;5;12mEmbedType[0m | [0m[38;5;12mEmbedBuilder[0m)[], reply[0m[35m?[0m: [0m[38;5;14mboolean[0m, mention[0m[35m?[0m: [0m[38;5;14mboolean[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mreply[0m[0m[35m[0m(content[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;12mEmbedType[0m | [0m[38;5;12mEmbedBuilder[0m | ([0m[38;5;12mEmbedType[0m | [0m[38;5;12mEmbedBuilder[0m)[], reply[0m[35m[0m, mention[0m[35m[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
     [0m[38;5;8mDeletes message.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1medit[0m[0m[35m[0m(data[0m[35m[0m: ([0m[38;5;12mMessageEditParamsType[0m | [0m[38;5;14mstring[0m)): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
@@ -304,21 +472,7 @@
     [0m[38;5;8mPins a message.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/messageCollector.ts:11:0 
-
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mMessageCollector[0m [0m[35mextends[0m EventEmitter
-
-  [0m[35m[0m[0m[35mconstructor[0m(client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m[0m: [0m[38;5;12mGuild[0m | [0m[38;5;14mundefined[0m, channel[0m[35m[0m: [0m[38;5;12mChannel[0m, filter[0m[35m[0m: [0m[35m[0m(msg[0m[35m[0m: [0m[38;5;12mMessage[0m) => [0m[38;5;14mboolean[0m, options[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m)
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m | [0m[38;5;14mundefined[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mchannel[0m[0m[35m[0m: [0m[38;5;12mChannel[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mfilter[0m[0m[35m[0m: [0m[35m[0m(msg[0m[35m[0m: [0m[38;5;12mMessage[0m) => [0m[38;5;14mboolean[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcollected[0m[0m[35m[0m: [0m[38;5;12mMessage[0m[]
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1moptions[0m[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mid[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mend[0m[0m[35m[0m()
-
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/newsChannel.ts:8:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/newsChannel.ts:8:0 
 
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mNewsChannel[0m [0m[35mextends[0m TextChannel
 
@@ -351,7 +505,15 @@
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mreadPoint[0m[0m[35m[0m()
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mreadBool[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/textChannel.ts:13:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/cache.ts:30:0 
+
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mSubManager[0m [0m[35mextends[0m BaseManager
+
+  [0m[35m[0m[0m[35mconstructor[0m(client[0m[35m[0m: [0m[38;5;12mClient[0m, guild[0m[35m[0m: [0m[38;5;12mGuild[0m)
+  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
+  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[1mguild[0m[0m[35m[0m: [0m[38;5;12mGuild[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/textChannel.ts:14:0 
 
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mTextChannel[0m [0m[35mextends[0m Channel
 
@@ -395,18 +557,17 @@
     [0m[38;5;8mCrossposts a message[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mfollow[0m[0m[35m[0m(webhook_channel_id[0m[35m[0m: [0m[38;5;14mstring[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mNewsFollowedChannelType[0m>
     [0m[38;5;8mFollows a news channel to another text channel.[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcreateCollector[0m[0m[35m[0m(filter[0m[35m[0m: [0m[35m[0m(msg[0m[35m[0m: [0m[38;5;12mMessage[0m) => [0m[38;5;14mboolean[0m, options[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m): [0m[38;5;12mMessageCollector[0m
+  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mcreateCollector[0m[0m[35m[0m(filter[0m[35m[0m: [0m[35m[0m(msg[0m[35m[0m: [0m[38;5;12mMessage[0m) => [0m[38;5;14mboolean[0m, options[0m[35m[0m: [0m[38;5;12mCollectorOptions[0m): [0m[38;5;12mCollector[0m<[0m[38;5;12mMessage[0m>
     [0m[38;5;8mCreates a message collector for a specified channel.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/user.ts:7:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/user.ts:6:0 
 
-[0m[0m[35m[0m[0m[35mclass[0m [0m[1mUser[0m [0m[35mextends[0m Base
+[0m[0m[35m[0m[0m[35mclass[0m [0m[1mUser[0m
 
   [0m[35m[0m[0m[35mconstructor[0m(data[0m[35m[0m: [0m[38;5;12mUserType[0m, client[0m[35m[0m: [0m[38;5;12mClient[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mdata[0m[0m[35m[0m: [0m[38;5;12mUserType[0m
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mUserType[0m): [0m[38;5;14mvoid[0m
+  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[1mclient[0m[0m[35m[0m: [0m[38;5;12mClient[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1msendMessage[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mMessageCreateParamsType[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mMessage[0m>
     [0m[38;5;8mSends message to DM channel.[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mavatar[0m[0m[35m[0m(format[0m[35m[0m, size[0m[35m[0m): [0m[38;5;14mstring[0m
@@ -417,7 +578,7 @@
     [0m[38;5;8mChecks if user is this bot (me).[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/structures/webhook.ts:7:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/structures/webhook.ts:7:0 
 
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mWebhook[0m
   [0m[38;5;8mWebhook Client with REST API communication.[0m
@@ -427,13 +588,9 @@
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mlastReq[0m[0m[35m[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1morigin[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1minited[0m[0m[35m[0m
-  [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mpropNames[0m[0m[35m[0m: [0m[38;5;14mstring[0m[]
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msleep[0m[0m[35m[0m
-  [0m[35m[0m[propName[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35mget [0m[0m[35m[0m[0m[1mtoken[0m[0m[35m[0m(): [0m[38;5;14mstring[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_init[0m[0m[35m[0m()
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1msetBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mWebhookType[0m): [0m[38;5;14mvoid[0m
-  [0m[35m[0m[0m[35mprotected [0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mupdateBase[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mWebhookType[0m): [0m[38;5;14mvoid[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_fetch[0m[0m[35m[0m(method[0m[35m[0m: [0m[38;5;14mstring[0m, path[0m[35m[0m: [0m[38;5;14mstring[0m, body[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;12mFormData[0m | [0m[38;5;14mnull[0m, json[0m[35m[0m, contentType[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14mboolean[0m, headers[0m[35m[0m: [0m[38;5;14many[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mT[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1m_performReq[0m[0m[35m[0m(req[0m[35m[0m: [0m[38;5;12mRequest[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mResponse[0m>
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35masync [0m[0m[35m[0m[0m[35m[0m[0m[1mdelete[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mboolean[0m>
@@ -444,14 +601,14 @@
     [0m[38;5;8mExecutes a webhook[0m
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mtoString[0m[0m[35m[0m()
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/cache.ts:1:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/cache.ts:4:0 
 
 [0m[0m[35m[0m[0m[35mclass[0m [0m[1mdefault[0m [0m[35mextends[0m Map
 
   [0m[35m[0m[0m[35mconstructor[0m(max[0m[35m[0m: [0m[38;5;14mnumber[0m)
   [0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[35m[0m[0m[1mset[0m[0m[35m[0m(key[0m[35m[0m: [0m[38;5;14many[0m, value[0m[35m[0m: [0m[38;5;14many[0m)
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:29:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:36:0 
 
 [0m[0m[35menum[0m [0m[1mApplicationCommandOptionEnum[0m
 
@@ -464,7 +621,7 @@
   [0m[1mCHANNEL[0m
   [0m[1mROLE[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:85:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:86:0 
 
 [0m[0m[35menum[0m [0m[1mCacheEnum[0m
 
@@ -474,7 +631,18 @@
   [0m[1mINVITES[0m
   [0m[1mOTHER[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:7:0 
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:34:0 
+
+[0m[0m[35menum[0m [0m[1mCommandParameterType[0m
+
+  [0m[1mBOOL[0m
+  [0m[1mINT[0m
+  [0m[1mFLOAT[0m
+  [0m[1mSTRING[0m
+  [0m[1mQUOTED[0m
+  [0m[1mREST[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:8:0 
 
 [0m[0m[35menum[0m [0m[1mEntityType[0m
 
@@ -485,24 +653,25 @@
   [0m[1mROLE[0m
   [0m[1mGUILD_MEMBER[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:55:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:64:0 
 
 [0m[0m[35menum[0m [0m[1mInteractionEnum[0m
 
   [0m[1mPing[0m
   [0m[1mApplicationCommand[0m
+  [0m[1mMessageComponent[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:77:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:87:0 
 
 [0m[0m[35menum[0m [0m[1mInteractionResponseEnum[0m
 
   [0m[1mPong[0m
-  [0m[1mAcknowledge[0m
-  [0m[1mChannelMessage[0m
   [0m[1mChannelMessageWithSource[0m
-  [0m[1mACKWithSource[0m
+  [0m[1mDeferredChannelMessageWithSource[0m
+  [0m[1mDeferredUpdateMessage[0m
+  [0m[1mUpdateMessage[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/constants.ts:68:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:69:0 
 
 [0m[0m[35menum[0m [0m[1mPermissionEnum[0m
 
@@ -538,14 +707,22 @@
   [0m[1mMANAGE_WEBHOOKS[0m
   [0m[1mMANAGE_EMOJIS[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:28:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:29:0 
 
 [0m[0m[35minterface[0m [0m[1mAccountType[0m
 
   [0m[1mid[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:66:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:15:0 
+
+[0m[0m[35minterface[0m [0m[1mApplicationCommandCreateType[0m
+
+  [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1mdescription[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1moptions[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandOptionType[0m[]
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:76:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationCommandInteractionDataOptionType[0m
 
@@ -553,34 +730,34 @@
   [0m[1mvalue[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandOptionType[0m
   [0m[1moptions[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandInteractionDataOptionType[0m[]
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:60:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:70:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationCommandInteractionDataType[0m
 
   [0m[1mid[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
   [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
-  [0m[1moptions[0m[0m[35m[0m: [0m[38;5;12mApplicationCommandInteractionDataOptionType[0m[]
+  [0m[1moptions[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandInteractionDataOptionType[0m[]
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:24:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:31:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationCommandOptionChoiceType[0m
 
   [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mvalue[0m[0m[35m[0m: [0m[38;5;14mstring[0m | [0m[38;5;14mnumber[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:14:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:21:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationCommandOptionType[0m
 
   [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mdescription[0m[0m[35m[0m: [0m[38;5;14mstring[0m
-  [0m[1mtype[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
+  [0m[1mtype[0m[0m[35m[0m: [0m[38;5;12mApplicationCommandOptionEnum[0m
   [0m[1mdefault[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
   [0m[1mrequired[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
   [0m[1moptions[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandOptionType[0m[]
   [0m[1mchoices[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandOptionChoiceType[0m[]
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:6:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:7:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationCommandRootType[0m
 
@@ -590,7 +767,7 @@
   [0m[1mdescription[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1moptions[0m[0m[35m[0m: [0m[38;5;12mApplicationCommandOptionType[0m[]
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:33:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:34:0 
 
 [0m[0m[35minterface[0m [0m[1mApplicationType[0m
 
@@ -601,37 +778,57 @@
   [0m[1msummmary[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mbot[0m[0m[35m?[0m: [0m[38;5;12mUser[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:77:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:78:0 
 
 [0m[0m[35minterface[0m [0m[1mCacheType[0m
 
-  [0m[1mguilds[0m[0m[35m?[0m: [0m[38;5;12mCache[0m
-  [0m[1mmessages[0m[0m[35m?[0m: [0m[38;5;12mCache[0m
-  [0m[1musers[0m[0m[35m?[0m: [0m[38;5;12mCache[0m
-  [0m[1minvites[0m[0m[35m?[0m: [0m[38;5;12mCache[0m
-  [0m[1mother[0m[0m[35m?[0m: [0m[38;5;12mCache[0m
+  [0m[1mguilds[0m[0m[35m[0m: [0m[38;5;12mGuildManager[0m
+  [0m[1mmessages[0m[0m[35m[0m: [0m[38;5;12mCache[0m
+  [0m[1musers[0m[0m[35m[0m: [0m[38;5;12mUserManager[0m
+  [0m[1minvites[0m[0m[35m[0m: [0m[38;5;12mCache[0m
+  [0m[1mother[0m[0m[35m[0m: [0m[38;5;12mCache[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/messageCollector.ts:7:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/collector.ts:4:0 
 
 [0m[0m[35minterface[0m [0m[1mCollectorOptions[0m
 
-  [0m[1mmax[0m[0m[35m[0m: [0m[38;5;12mNumber[0m
+  [0m[1mmax[0m[0m[35m?[0m: [0m[38;5;12mNumber[0m
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:5:0 
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:3:0 
 
 [0m[0m[35minterface[0m [0m[1mCommand[0m
 
   [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mrun[0m[0m[35m[0m: [0m[38;5;12mFunction[0m
-  [0m[1mcategory[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1mcategory[0m[0m[35m?[0m: [0m[38;5;14mstring[0m
+  [0m[1mparameters[0m[0m[35m?[0m: [0m[38;5;12mCommandParameter[0m[]
   [0m[1mpermissions[0m[0m[35m?[0m: [0m[38;5;12mPermissionEnum[0m[]
   [0m[1mdescription[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mhidden[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
   [0m[1mhelp[0m[0m[35m?[0m: [0m[38;5;12mEmbedBuilder[0m | [0m[38;5;14mstring[0m
   [0m[1maliases[0m[0m[35m?[0m: [0m[38;5;14mstring[0m[]
-  [0m[1mrestrictions[0m[0m[35m?[0m: { guild: [0m[38;5;12mRestriction[0m | [0m[38;5;12mSnowflakes[0m; users: [0m[38;5;12mRestriction[0m | [0m[38;5;12mSnowflakes[0m; }
+  [0m[1mallowDirect[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
+  [0m[1mallowDm[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
+  [0m[1mrestrictions[0m[0m[35m?[0m: { guild: [0m[38;5;12mSnowflake[0m | [0m[38;5;12mSnowflake[0m[]; users: [0m[38;5;12mSnowflake[0m | [0m[38;5;12mSnowflake[0m[]; }
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:25:0 
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:30:0 
+
+[0m[0m[35minterface[0m [0m[1mCommandArguments[0m [0m[35mextends[0m [0m[38;5;12mCommandParameter[0m
+
+  [0m[1mvalue[0m[0m[35m?[0m: [0m[38;5;14many[0m
+
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:21:0 
+
+[0m[0m[35minterface[0m [0m[1mCommandParameter[0m
+
+  [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1mtype[0m[0m[35m[0m: [0m[38;5;12mCommandParameterType[0m
+  [0m[1mdefault[0m[0m[35m?[0m: [0m[38;5;14many[0m
+    [0m[38;5;8mIf you want to set nullable value as default property set it to `null`[0m
+  [0m[1mrequired[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
+    [0m[38;5;8mIf `default` property is set, defaults to `false`. In any other case value is true.[0m
+
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:43:0 
 
 [0m[0m[35minterface[0m [0m[1mCommandisOptions[0m
 
@@ -647,7 +844,7 @@
   [0m[1mdebug[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
   [0m[1mhotreload[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:60:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:61:0 
 
 [0m[0m[35minterface[0m [0m[1mConnectionType[0m
 
@@ -661,21 +858,81 @@
   [0m[1mshow_activity[0m[0m[35m[0m: [0m[38;5;14mboolean[0m
   [0m[1mvisibility[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:72:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/Ctx.ts:41:0 
+
+[0m[0m[35minterface[0m [0m[1mCtx[0m<Result>
+  [0m[38;5;8mhttps://docs.evt.land/api/ctx[0m
+
+  [0m[1mevtDoneOrAborted[0m[0m[35m[0m: [0m[38;5;12mEvt[0m<[0m[38;5;12mDoneOrAborted[0m<[0m[38;5;12mResult[0m>>
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-evtdoneoraborted[0m
+  [0m[1mevtAttach[0m[0m[35m[0m: [0m[38;5;12mEvt[0m<[0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;12mResult[0m>>
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-evtattach[0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mPosted every time a handler is bound to this context[0m
+  [0m[1mevtDetach[0m[0m[35m[0m: [0m[38;5;12mEvt[0m<[0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;12mResult[0m>>
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-evtdetach[0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mPosted every time a handler bound to this context is detached from it's Evt[0m
+  [0m[1mwaitFor[0m[0m[35m[0m(timeout[0m[35m?[0m: [0m[38;5;14mnumber[0m): [0m[38;5;12mPromise[0m<[0m[38;5;12mResult[0m>
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-waitfor-timeout [0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mReturn a promise that resolve next time ctx.done(result) is invoked[0m
+    [0m[38;5;8mReject if ctx.abort(error) is invoked.[0m
+    [0m[38;5;8mOptionally a timeout can be passed, if so the returned promise will reject [0m
+    [0m[38;5;8mwith EvtError.Timeout if done(result) is not called within [timeout]ms.[0m
+    [0m[38;5;8mIf the timeout is reached ctx.abort(timeoutError) will be invoked.[0m
+  [0m[1mabort[0m[0m[35m[0m(error[0m[35m[0m: [0m[38;5;12mError[0m): [0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;12mResult[0m>[]
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-abort-error[0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mAll the handler will be detached.[0m
+    [0m[38;5;8mevtDone will post [┬áerror, undefined, handlers (detached) ][0m
+    [0m[38;5;8mif getPrDone() was invoked the promise will reject with the error[0m
+  [0m[1mdone[0m[0m[35m[0m(result[0m[35m[0m: [0m[38;5;12mResult[0m): [0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;12mResult[0m>[]
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-done-result[0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mDetach all handlers.[0m
+    [0m[38;5;8mevtDone will post [ null, result, handlers (detached) ][0m
+    [0m[38;5;8mIf getPrDone() was invoked the promise will result with result[0m
+  [0m[1mgetHandlers[0m[0m[35m[0m(): [0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;12mResult[0m>[]
+    [0m[38;5;8mhttps://docs.evt.land/api/ctx#ctx-gethandlers[0m
+  [0m[1mzz__addHandler[0m[0m[35m[0m(handler[0m[35m[0m: [0m[38;5;12mHandler[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;12mCtxLike[0m<[0m[38;5;12mResult[0m>>, evt[0m[35m[0m: [0m[38;5;12mEvtLike[0m<[0m[38;5;12mT[0m>): [0m[38;5;14mvoid[0m
+    [0m[38;5;8mExposed to enable safe interoperability between mismatching EVT versions. [0m
+    [0m[38;5;8mShould be considered private[0m
+  [0m[1mzz__removeHandler[0m[0m[35m[0m(handler[0m[35m[0m: [0m[38;5;12mHandler[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;12mCtxLike[0m<[0m[38;5;12mResult[0m>>): [0m[38;5;14mvoid[0m
+    [0m[38;5;8mExposed to enable safe interoperability between EVT versions. [0m
+    [0m[38;5;8mShould be considered private[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/CtxLike.ts:26:0 
+
+[0m[0m[35minterface[0m [0m[1mCtxLike[0m<Result = [0m[38;5;14many[0m>
+  [0m[38;5;8mMinimal interface that an object must implement to be a valid context argument [0m
+  [0m[38;5;8m( for interop between mismatching EVT versions )[0m
+
+  [0m[1mdone[0m[0m[35m[0m(result[0m[35m[0m: [0m[38;5;12mResult[0m): [0m[38;5;14mvoid[0m
+  [0m[1mabort[0m[0m[35m[0m(error[0m[35m[0m: [0m[38;5;12mError[0m): [0m[38;5;14mvoid[0m
+  [0m[1mzz__addHandler[0m[0m[35m[0m(handler[0m[35m[0m: [0m[38;5;12mHandler[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;12mCtxLike[0m<[0m[38;5;12mResult[0m>>, evt[0m[35m[0m: [0m[38;5;12mEvtLike[0m<[0m[38;5;12mT[0m>): [0m[38;5;14mvoid[0m
+  [0m[1mzz__removeHandler[0m[0m[35m[0m(handler[0m[35m[0m: [0m[38;5;12mHandler[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;12mCtxLike[0m<[0m[38;5;12mResult[0m>>): [0m[38;5;14mvoid[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:73:0 
 
 [0m[0m[35minterface[0m [0m[1mErrorType[0m
 
   [0m[1mmessage[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mcode[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:39:0 
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:57:0 
 
 [0m[0m[35minterface[0m [0m[1mEvent[0m
 
-  [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1mname[0m[0m[35m[0m: [0m[38;5;12mEventsNames[0m
   [0m[1mrun[0m[0m[35m[0m: [0m[38;5;12mFunction[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:22:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/Evt.ts:5:0 
+
+[0m[0m[35minterface[0m [0m[1mEvt[0m<T> [0m[35mextends[0m [0m[38;5;12mPostable[0m<[0m[38;5;12mT[0m>, [0m[38;5;12mNonPostableEvt[0m<[0m[38;5;12mT[0m>
+
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:23:0 
 
 [0m[0m[35minterface[0m [0m[1mGetGatewayType[0m
 
@@ -683,7 +940,7 @@
   [0m[1mshards[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
   [0m[1msession_start_limit[0m[0m[35m[0m: [0m[38;5;12mSessionStartLimitType[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:42:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:43:0 
 
 [0m[0m[35minterface[0m [0m[1mIntegrationType[0m
 
@@ -703,50 +960,75 @@
   [0m[1mrevoked[0m[0m[35m[0m: [0m[38;5;14mboolean[0m
   [0m[1mapplication[0m[0m[35m?[0m: [0m[38;5;12mApplicationType[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:85:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:95:0 
 
 [0m[0m[35minterface[0m [0m[1mInteractionApplicationCommandCallbackDataType[0m
 
   [0m[1mtts[0m[0m[35m?[0m: [0m[38;5;14mboolean[0m
-  [0m[1mcontent[0m[0m[35m[0m: [0m[38;5;14mstring[0m
-  [0m[1membeds[0m[0m[35m?[0m: [0m[38;5;12mEmbedType[0m
+  [0m[1mcontent[0m[0m[35m?[0m: [0m[38;5;14mstring[0m
+  [0m[1membeds[0m[0m[35m?[0m: [0m[38;5;12mEmbedType[0m[]
   [0m[1mallowed_mentions[0m[0m[35m?[0m: [0m[38;5;12mAllowedMentionsType[0m
-  [0m[1mflags[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
+  [0m[1mflags[0m[0m[35m?[0m: [0m[38;5;14mnumber[0m
+  [0m[1mcomponents[0m[0m[35m?[0m: [0m[38;5;14many[0m[]
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:40:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:47:0 
 
 [0m[0m[35minterface[0m [0m[1mInteractionGuildMemberType[0m [0m[35mextends[0m [0m[38;5;12mGuildMemberType[0m
 
   [0m[1mpermissions[0m[0m[35m[0m: [0m[38;5;14mstring[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:72:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:82:0 
 
 [0m[0m[35minterface[0m [0m[1mInteractionResponseType[0m
 
   [0m[1mtype[0m[0m[35m[0m: [0m[38;5;12mInteractionResponseEnum[0m
   [0m[1mdata[0m[0m[35m?[0m: [0m[38;5;12mInteractionApplicationCommandCallbackDataType[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/commands.ts:44:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:51:0 
 
 [0m[0m[35minterface[0m [0m[1mInteractionType[0m
 
   [0m[1mid[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
+  [0m[1mapplication_id[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
   [0m[1mtype[0m[0m[35m[0m: [0m[38;5;12mInteractionEnum[0m
   [0m[1mdata[0m[0m[35m?[0m: [0m[38;5;12mApplicationCommandInteractionDataType[0m
-  [0m[1mguild_id[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
-  [0m[1mchannel_id[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
-  [0m[1mmember[0m[0m[35m[0m: [0m[38;5;12mInteractionGuildMemberType[0m
+  [0m[1mguild_id[0m[0m[35m?[0m: [0m[38;5;12mSnowflake[0m
+  [0m[1mchannel_id[0m[0m[35m?[0m: [0m[38;5;12mSnowflake[0m
+  [0m[1mmember[0m[0m[35m?[0m: [0m[38;5;12mInteractionGuildMemberType[0m
+  [0m[1muser[0m[0m[35m?[0m: [0m[38;5;12mUserType[0m
   [0m[1mtoken[0m[0m[35m[0m: [0m[38;5;14mstring[0m
   [0m[1mversion[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:20:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/commands.ts:104:0 
+
+[0m[0m[35minterface[0m [0m[1mMessageInteractionType[0m
+
+  [0m[1mid[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m
+  [0m[1mtype[0m[0m[35m[0m: [0m[38;5;12mInteractionEnum[0m
+  [0m[1mname[0m[0m[35m[0m: [0m[38;5;14mstring[0m
+  [0m[1muser[0m[0m[35m[0m: [0m[38;5;12mUserType[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/Postable.ts:2:0 
+
+[0m[0m[35minterface[0m [0m[1mPostable[0m<T>
+
+  [0m[1mpostAsyncOnceHandled[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m): [0m[38;5;14mnumber[0m | [0m[38;5;12mPromise[0m<[0m[38;5;14mnumber[0m>
+    [0m[38;5;8mhttps://docs.evt.land/api/evt/post[0m
+  [0m[1mpost[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m): [0m[38;5;14mnumber[0m
+    [0m[38;5;8mReturns post count[0m
+  [0m[1mpostAndWait[0m[0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m): [0m[38;5;12mPromise[0m<[0m[38;5;14mvoid[0m>
+    [0m[38;5;8mPost and wait for all async handler's callbacks have resolved.[0m
+    [0m[38;5;8m[0m
+    [0m[38;5;8mhttps://docs.evt.land/api/evt/post#evt-postandwait-data-promise-less-than-void-greater-than[0m
+
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:38:0 
 
 [0m[0m[35minterface[0m [0m[1mRestriction[0m
 
-  [0m[1mid[0m[0m[35m[0m: [0m[38;5;12mSnowflakes[0m
+  [0m[1mid[0m[0m[35m[0m: [0m[38;5;12mSnowflake[0m | [0m[38;5;12mSnowflake[0m[]
   [0m[1mblacklist[0m[0m[35m[0m: [0m[38;5;14mboolean[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:16:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:17:0 
 
 [0m[0m[35minterface[0m [0m[1mSessionStartLimitType[0m
 
@@ -754,23 +1036,215 @@
   [0m[1mremaining[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
   [0m[1mreset_after[0m[0m[35m[0m: [0m[38;5;14mnumber[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:12:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/StatefulEvt.ts:5:0 
+
+[0m[0m[35minterface[0m [0m[1mStatefulEvt[0m<T> [0m[35mextends[0m [0m[38;5;12mStatefulReadonlyEvt[0m<[0m[38;5;12mT[0m>, [0m[38;5;12mStatefulPostable[0m<[0m[38;5;12mT[0m>
+
+  [0m[1mstate[0m[0m[35m[0m: [0m[38;5;12mT[0m
+    [0m[38;5;8mhttps://docs.evt.land/api/statefulevt#state[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/StatefulPostable.ts:4:0 
+
+[0m[0m[35minterface[0m [0m[1mStatefulPostable[0m<T> [0m[35mextends[0m [0m[38;5;12mPostable[0m<[0m[38;5;12mT[0m>
+
+  [0m[1mstate[0m[0m[35m[0m: [0m[38;5;12mT[0m
+  [0m[1mpostForceChange[0m[0m[35m[0m(wData[0m[35m?[0m: readonly [[0m[38;5;12mT[0m]): [0m[38;5;14mnumber[0m
+    [0m[38;5;8mhttps://docs.evt.land/api/statefulevt#postfocechange[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/VoidCtx.ts:17:0 
+
+[0m[0m[35minterface[0m [0m[1mVoidCtx[0m [0m[35mextends[0m [0m[38;5;12mCtx[0m<[0m[38;5;14mvoid[0m>
+  [0m[38;5;8mhttps://docs.evt.land/api/evt/ctx [0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mOnly an interface (not a class), use Evt.newCtx() to get an instance.[0m
+
+  [0m[1mdone[0m[0m[35m[0m(): [0m[38;5;12mHandler.WithEvt[0m<[0m[38;5;14many[0m, [0m[38;5;14mvoid[0m>[]
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/CtxLike.ts:40:0 
+
+[0m[0m[35minterface[0m [0m[1mVoidCtxLike[0m [0m[35mextends[0m [0m[38;5;12mCtxLike[0m<[0m[38;5;14mvoid[0m>
+
+  [0m[1mdone[0m[0m[35m[0m(): [0m[38;5;14mvoid[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/VoidEvt.ts:11:0 
+
+[0m[0m[35minterface[0m [0m[1mVoidEvt[0m [0m[35mextends[0m [0m[38;5;12mEvt[0m<[0m[38;5;14mvoid[0m>
+  [0m[38;5;8mhttps://docs.evt.land/api/evt/create#why-voidevt-and-not-evt-less-than-void-greater-than [0m
+  [0m[38;5;8mhttps://docs.evt.land/api/evt/create[0m
+  [0m[38;5;8m[0m
+  [0m[38;5;8mThis is only an interface, not a class.[0m
+  [0m[38;5;8mget an instance using Evt.create()[0m
+
+  [0m[1mpost[0m[0m[35m[0m(): [0m[38;5;14mnumber[0m
+  [0m[1mpostAsyncOnceHandled[0m[0m[35m[0m(): [0m[38;5;12mPromise[0m<[0m[38;5;14mnumber[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/Ctx.ts:16:0 
+
+[0m[0m[35mtype[0m [0m[1mCtx[0m<Result> = [0m[31m<UNIMPLEMENTED>[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:13:0 
 
 [0m[0m[35mtype[0m [0m[1mDictionaryType[0m = { [0m[35m[0m[index[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m; }
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:14:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/index.ts:10:0 
+
+[0m[0m[35mtype[0m [0m[1mDiff[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/Ctx.ts:17:0 
+
+[0m[0m[35mtype[0m [0m[1mDoneOrAborted[0m<Result> = [0m[38;5;12mDoneOrAborted.Done[0m<[0m[38;5;12mResult[0m> | [0m[38;5;12mDoneOrAborted.Aborted[0m<[0m[38;5;12mResult[0m>
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/EventTargetLike.ts:64:0 
+
+[0m[0m[35mtype[0m [0m[1mEventTargetLike[0m<T> = [0m[38;5;12mEventTargetLike.HasEventTargetAddRemove[0m<[0m[38;5;12mT[0m> | [0m[38;5;12mEventTargetLike.NodeStyleEventEmitter[0m | [0m[38;5;12mEventTargetLike.JQueryStyleEventEmitter[0m | [0m[38;5;12mEventTargetLike.RxJSSubject[0m<[0m[38;5;12mT[0m>
+
+[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:62:0 
+
+[0m[0m[35mtype[0m [0m[1mEventsNames[0m = [0m[38;5;10m"DEBUG"[0m | [0m[38;5;10m"READY"[0m | [0m[38;5;10m"RAW"[0m | [0m[38;5;10m"APPLICATION_COMMAND_CREATE"[0m | [0m[38;5;10m"APPLICATION_COMMAND_DELETE"[0m | [0m[38;5;10m"APPLICATION_COMMAND_UPDATE"[0m | [0m[38;5;10m"CHANNEL_CREATE"[0m | [0m[38;5;10m"CHANNEL_DELETE"[0m | [0m[38;5;10m"CHANNEL_PINS_UPDATE"[0m | [0m[38;5;10m"CHANNEL_UPDATE"[0m | [0m[38;5;10m"GUILD_BAN_ADD"[0m | [0m[38;5;10m"GUILD_BAN_ADD"[0m | [0m[38;5;10m"GUILD_CREATE"[0m | [0m[38;5;10m"GUILD_DELETE"[0m | [0m[38;5;10m"GUILD_MEMBER_ADD"[0m | [0m[38;5;10m"GUILD_MEMBER_REMOVE"[0m | [0m[38;5;10m"GUILD_MEMBER_UPDATE"[0m | [0m[38;5;10m"GUILD_MEMBERS_CHUNK"[0m | [0m[38;5;10m"GUILD_ROLE_CREATE"[0m | [0m[38;5;10m"GUILD_ROLE_CREATE"[0m | [0m[38;5;10m"GUILD_ROLE_UPDATE"[0m | [0m[38;5;10m"INTERACTION_CREATE"[0m | [0m[38;5;10m"INVITE_CREATE"[0m | [0m[38;5;10m"INVITE_DELETE"[0m | [0m[38;5;10m"MESSAGE_CREATE"[0m | [0m[38;5;10m"MESSAGE_DELETE_BULK"[0m | [0m[38;5;10m"MESSAGE_DELETE"[0m | [0m[38;5;10m"MESSAGE_UPDATE"[0m | [0m[38;5;10m"MESSAGE_REACTION_ADD"[0m | [0m[38;5;10m"MESSAGE_REACTION_REMOVE_ALL"[0m | [0m[38;5;10m"MESSAGE_REACTION_REMOVE"[0m | [0m[38;5;10m"PRESENCE_UPDATE"[0m | [0m[38;5;10m"TYPING_START"[0m | [0m[38;5;10m"VOICE_SERVER_UPDATE"[0m | [0m[38;5;10m"VOICE_STATE_UPDATE"[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/Evt.ts:38:0 
+
+[0m[0m[35mtype[0m [0m[1mEvt[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/evt[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/EvtError.ts:5:0 
+
+[0m[0m[35mtype[0m [0m[1mEvtError[0m = [0m[38;5;12mEvtError.Timeout[0m | [0m[38;5;12mEvtError.Detached[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:3:0 
+
+[0m[0m[35mtype[0m [0m[1mEvtLike[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mMinimal interface that an object have to implement[0m
+  [0m[38;5;8mto be considered as being most certainly an Evt instance[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:10:0 
+
+[0m[0m[35mtype[0m [0m[1mFactorizeEvt[0m<E extends [0m[38;5;12mEvtLike[0m<[0m[38;5;14many[0m>> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/helpertypes#swapevttype-less-than-e-t-greater-than[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/Handler.ts:6:0 
+
+[0m[0m[35mtype[0m [0m[1mHandler[0m<T, U, CtxProp extends [0m[38;5;12mCtxLike[0m<[0m[38;5;14many[0m> | [0m[38;5;14mundefined[0m = [0m[38;5;12mCtxLike[0m<[0m[38;5;14many[0m> | [0m[38;5;14mundefined[0m> = [0m[38;5;12mHandler.PropsFromArgs[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxProp[0m> & [0m[38;5;12mHandler.PropsFromMethodName[0m & [0m[38;5;12mReadonly[0m<{ detach(): [0m[38;5;14mboolean[0m; promise: [0m[38;5;12mPromise[0m<[0m[38;5;12mU[0m>; }>
+  [0m[38;5;8mhttps://docs.evt.land/api/handler[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/index.ts:5:0 
+
+[0m[0m[35mtype[0m [0m[1mNonPostableEvt[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:15:0 
 
 [0m[0m[35mtype[0m [0m[1mNumberDictionaryType[0m = { [0m[35m[0m[index[0m[35m[0m: [0m[38;5;14mnumber[0m]: [0m[38;5;14many[0m; }
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:4:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/Operator.ts:75:0 
+
+[0m[0m[35mtype[0m [0m[1mOperator[0m<T, U, CtxResult = [0m[38;5;14many[0m> = [0m[38;5;12mOperator.f╬╗[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m> | ([0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mU[0m) => [0m[38;5;14mboolean[0m) | ([0m[38;5;12mU[0m [0m[35mextends[0m [0m[38;5;12mT[0m ? [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[31m<UNIMPLEMENTED>[0m : [0m[38;5;14mnever[0m)
+  [0m[38;5;8mhttps://docs.evt.land/api/operator[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:5:0 
 
 [0m[0m[35mtype[0m [0m[1mSnowflake[0m = [0m[38;5;14mstring[0m
 
-[0m[3m[38;5;8mDefined in file:///D:/Typescript/commandis/src/types.ts:3:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/StatefulEvt.ts:17:0 
 
-[0m[0m[35mtype[0m [0m[1mSnowflakes[0m = [0m[38;5;12mSnowflake[0m[] | [0m[38;5;12mSnowflake[0m
+[0m[0m[35mtype[0m [0m[1mStatefulEvt[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/statefulevt[0m
 
-[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.9.2/src/types/utils.ts:5:0 
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/index.ts:9:0 
+
+[0m[0m[35mtype[0m [0m[1mStatefulReadonlyEvt[0m<T> = [0m[31m<UNIMPLEMENTED>[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:14:0 
+
+[0m[0m[35mtype[0m [0m[1mSwapEvtType[0m<E extends [0m[38;5;12mEvtLike[0m<[0m[38;5;14many[0m>, T> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/helpertypes#swapevttype-less-than-e-t-greater-than[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/types/utils.ts:6:0 
 
 [0m[0m[35mtype[0m [0m[1mTimestamp[0m = [0m[38;5;14mstring[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:22:0 
+
+[0m[0m[35mtype[0m [0m[1mToNonPostableEvt[0m<E extends ({ [0m[35m[0m[key[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m; } | [0m[38;5;12mEvtLike[0m<[0m[38;5;14many[0m>)> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/helpertypes#tononpostableevt-less-than-e-greater-than[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:18:0 
+
+[0m[0m[35mtype[0m [0m[1mToPostableEvt[0m<E extends ({ [0m[35m[0m[key[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m; } | [0m[38;5;12mEvtLike[0m<[0m[38;5;14many[0m>)> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/helpertypes#topostableevt-less-than-e-greater-than[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:26:0 
+
+[0m[0m[35mtype[0m [0m[1mUnpackCtx[0m<Ctx extends [0m[31m<UNIMPLEMENTED>[0m> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mAnalog to UnpackEvt<E> Unpack the type argument of a Ctx[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/helper/index.ts:6:0 
+
+[0m[0m[35mtype[0m [0m[1mUnpackEvt[0m<T extends ({ [0m[35m[0m[key[0m[35m[0m: [0m[38;5;14mstring[0m]: [0m[38;5;14many[0m; } | [0m[38;5;12mEvtLike[0m<[0m[38;5;14many[0m>)> = [0m[31m<UNIMPLEMENTED>[0m
+  [0m[38;5;8mhttps://docs.evt.land/api/helpertypes#unpackevt-less-than-e-greater-than[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/corddis@v0.11.1/src/constants.ts:114:0 
+
+[0m[0m[35mtype[0m [0m[1mintents[0m = [0m[38;5;10m"CHANNEL_CREATE"[0m | [0m[38;5;10m"CHANNEL_DELETE"[0m | [0m[38;5;10m"CHANNEL_UPDATE"[0m | [0m[38;5;10m"CHANNEL_PINS_UPDATE"[0m | [0m[38;5;10m"GUILD_CREATE"[0m | [0m[38;5;10m"GUILD_DELETE"[0m | [0m[38;5;10m"GUILD_ROLE_CREATE"[0m | [0m[38;5;10m"GUILD_ROLE_DELETE"[0m | [0m[38;5;10m"GUILD_ROLE_UPDATE"[0m | [0m[38;5;10m"GUILD_BAN_ADD"[0m | [0m[38;5;10m"GUILD_BAN_REMOVE"[0m | [0m[38;5;10m"GUILD_MEMBER_ADD"[0m | [0m[38;5;10m"GUILD_MEMBER_REMOVE"[0m | [0m[38;5;10m"GUILD_MEMBER_UPDATE"[0m | [0m[38;5;10m"GUILD_MEMBERS_CHUNK"[0m | [0m[38;5;10m"MESSAGE_CREATE"[0m | [0m[38;5;10m"MESSAGE_UPDATE"[0m | [0m[38;5;10m"MESSAGE_DELETE"[0m | [0m[38;5;10m"MESSAGE_DELETE_BULK"[0m | [0m[38;5;10m"MESSAGE_REACTION_ADD"[0m | [0m[38;5;10m"MESSAGE_REACTION_REMOVE"[0m | [0m[38;5;10m"MESSAGE_REACTION_REMOVE_ALL"[0m | [0m[38;5;10m"TYPING_START"[0m | [0m[38;5;10m"INVITE_CREATE"[0m | [0m[38;5;10m"INVITE_DELETE"[0m | [0m[38;5;10m"PRESENCE_UPDATE"[0m | [0m[38;5;10m"VOICE_SERVER_UPDATE"[0m | [0m[38;5;10m"VOICE_STATE_UPDATE"[0m | [0m[38;5;10m"INTERACTION_CREATE"[0m | [0m[38;5;10m"APPLICATION_COMMAND_CREATE"[0m | [0m[38;5;10m"APPLICATION_COMMAND_DELETE"[0m | [0m[38;5;10m"APPLICATION_COMMAND_UPDATE"[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/CtxLike.ts:33:0 
+
+[0m[0m[35mnamespace[0m [0m[1mCtxLike[0m
+
+  [0m[35mconst[0m [0m[1mmatch[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/interfaces/Ctx.ts:19:0 
+
+[0m[0m[35mnamespace[0m [0m[1mDoneOrAborted[0m
+
+  [0m[35mtype[0m [0m[1mDone[0m<Result> = [0m[38;5;12mCommon[0m<[0m[38;5;12mResult[0m> & { type: [0m[38;5;10m"DONE"[0m; result: [0m[38;5;12mResult[0m; error: [0m[38;5;14mundefined[0m; }
+  [0m[35mtype[0m [0m[1mAborted[0m<Result> = [0m[38;5;12mCommon[0m<[0m[38;5;12mResult[0m> & { type: [0m[38;5;10m"ABORTED"[0m; error: [0m[38;5;12mError[0m; result: [0m[38;5;14mundefined[0m; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/EventTargetLike.ts:71:0 
+
+[0m[0m[35mnamespace[0m [0m[1mEventTargetLike[0m
+
+  [0m[35mtype[0m [0m[1mHTMLElement[0m = [0m[38;5;12mHasEventTargetAddRemove[0m<[0m[38;5;14many[0m> & { innerText: [0m[38;5;14mstring[0m; }
+  [0m[35mtype[0m [0m[1mWindow[0m = [0m[38;5;12mHasEventTargetAddRemove[0m<[0m[38;5;14many[0m> & { document: [0m[38;5;12mEventTargetLike.Document[0m; }
+  [0m[35mtype[0m [0m[1mDocument[0m = [0m[38;5;12mHasEventTargetAddRemove[0m<[0m[38;5;14many[0m> & { URL: [0m[38;5;14mstring[0m; }
+  [0m[35mtype[0m [0m[1mRxJSSubject[0m<T> = { subscribe: [0m[35m[0m(next[0m[35m[0m: [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[38;5;14mvoid[0m) => [0m[38;5;12mRxJSSubject.Subscription[0m; }
+  [0m[35mnamespace[0m [0m[1mRxJSSubject[0m
+  [0m[35mtype[0m [0m[1mNodeStyleEventEmitter[0m = [0m[38;5;12mNodeStyleEventEmitter.Compat[0m | [0m[38;5;12mNodeStyleEventEmitter.Regular[0m
+  [0m[35mnamespace[0m [0m[1mNodeStyleEventEmitter[0m
+  [0m[35minterface[0m [0m[1mJQueryStyleEventEmitter[0m
+  [0m[35mnamespace[0m [0m[1mJQueryStyleEventEmitter[0m
+  [0m[35minterface[0m [0m[1mHasEventTargetAddRemove[0m<E>
+  [0m[35mnamespace[0m [0m[1mHasEventTargetAddRemove[0m
+  [0m[35mconst[0m [0m[1mcanBe[0m
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/EvtError.ts:9:0 
+
+[0m[0m[35mnamespace[0m [0m[1mEvtError[0m
+
+  [0m[35mtype[0m [0m[1mTimeout[0m = typeof _1.Timeout[[0m[38;5;10m"prototype"[0m]
+  [0m[35mconst[0m [0m[1mTimeout[0m: { prototype: [0m[38;5;12mTimeout[0m; }
+  [0m[35mtype[0m [0m[1mDetached[0m = typeof _2.Detached[[0m[38;5;10m"prototype"[0m]
+  [0m[35mconst[0m [0m[1mDetached[0m: { prototype: [0m[38;5;12mDetached[0m; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/Handler.ts:14:0 
+
+[0m[0m[35mnamespace[0m [0m[1mHandler[0m
+
+  [0m[35mtype[0m [0m[1mPropsFromArgs[0m<T, U, CtxProp extends [0m[38;5;12mCtxLike[0m<[0m[38;5;14many[0m> | [0m[38;5;14mundefined[0m = [0m[38;5;12mCtxLike[0m<[0m[38;5;14many[0m> | [0m[38;5;14mundefined[0m> = { ctx: [0m[38;5;12mCtxProp[0m; timeout: [0m[38;5;14mnumber[0m | [0m[38;5;14mundefined[0m; op: [0m[38;5;12mOperator[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxProp[0m [0m[35mextends[0m [0m[38;5;12mCtxLike[0m<[0m[31m<UNIMPLEMENTED>[0m> ? [0m[38;5;12mCtxResult[0m : [0m[38;5;14mundefined[0m>; callback: ([0m[35m[0m(transformedData[0m[35m[0m: [0m[38;5;12mU[0m) => [0m[38;5;14mvoid[0m) | [0m[38;5;14mundefined[0m; }
+    [0m[38;5;8mHandlers params that come from the arguments passed to the method invoked[0m
+  [0m[35mtype[0m [0m[1mPropsFromMethodName[0m = [0m[38;5;12mPropsFromMethodName.Sync[0m | [0m[38;5;12mPropsFromMethodName.Async[0m
+    [0m[38;5;8mHandlers params that are implicitly specified by the method used: [0m
+    [0m[38;5;8mattachOnce => once[0m
+    [0m[38;5;8mattachOncePrepend => once + prepend[0m
+    [0m[38;5;8mwaitFor => once + async[0m
+    [0m[38;5;8m...[0m
+  [0m[35mnamespace[0m [0m[1mPropsFromMethodName[0m
+  [0m[35mtype[0m [0m[1mWithEvt[0m<T, CtxResult> = { handler: [0m[38;5;12mHandler[0m<[0m[38;5;12mT[0m, [0m[38;5;14many[0m, [0m[38;5;12mCtxLike[0m<[0m[38;5;12mCtxResult[0m>>; evt: [0m[38;5;12mEvtLike[0m<[0m[38;5;12mT[0m>; }
+
+[0m[3m[38;5;8mDefined in https://deno.land/x/evt/lib/types/Operator.ts:81:0 
+
+[0m[0m[35mnamespace[0m [0m[1mOperator[0m
+
+  [0m[35mtype[0m [0m[1mf╬╗[0m<T, U, CtxResult = [0m[38;5;14many[0m> = [0m[38;5;12mf╬╗.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m> | [0m[38;5;12mf╬╗.Stateful[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m>
+  [0m[35mnamespace[0m [0m[1mf╬╗[0m
+  [0m[35mtype[0m [0m[1mStateless[0m<T, U, CtxResult = [0m[38;5;14many[0m> = [0m[38;5;12mf╬╗.Stateless[0m<[0m[38;5;12mT[0m, [0m[38;5;12mU[0m, [0m[38;5;12mCtxResult[0m> | ([0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mU[0m) => [0m[38;5;14mboolean[0m) | ([0m[38;5;12mU[0m [0m[35mextends[0m [0m[38;5;12mT[0m ? [0m[35m[0m(data[0m[35m[0m: [0m[38;5;12mT[0m) => [0m[31m<UNIMPLEMENTED>[0m : [0m[38;5;14mnever[0m)
 
