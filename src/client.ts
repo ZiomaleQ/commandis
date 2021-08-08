@@ -1,4 +1,4 @@
-import { Client as Corddis, Intents, Message, to } from "../deps.ts";
+import { Client as Corddis, EventEmitter, Intents, Message, to } from "../deps.ts";
 import { Iterator } from "./iterator.ts";
 import { StringReader } from "./stringReader.ts";
 import { CommandContext } from './CommandContext.ts';
@@ -16,6 +16,7 @@ export class Client extends Corddis {
   local_events: Event[] = [];
   directCommands: Command[] = [];
   hr: Iterator = new Iterator();
+  channel: EventEmitter = new EventEmitter()
 
   constructor(options: CommandisOptions = {}, commands: Command[] = [], events: Event[] = []) {
     super(options.token);

@@ -11,7 +11,7 @@ export class Iterator extends EventEmitter {
     return this._canceled = true;
   }
 
-  async iterate(values: AsyncIterableIterator<Deno.FsEvent>): Promise<boolean> {
+  async iterate(values: AsyncIterableIterator<Deno.FsEvent> | Deno.FsWatcher): Promise<boolean> {
     try {
       for await (let value of values) {
         if (value.kind == "access") continue;
