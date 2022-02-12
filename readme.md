@@ -12,6 +12,3 @@ It's the official bot framework for [corddis](https://deno.land/x/corddis)
   - [ ] Errors
 - Low piority:
   - [x] <Client>.waitFor
-
-If u want documentation in Json check out mod.json, it's documentation generated
-from `deno doc`

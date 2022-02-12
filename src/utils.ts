@@ -1,8 +1,8 @@
-import { EmbedBuilder, Guild, Message } from "../deps.ts"
+import { EmbedBuilder, Message } from "../deps.ts"
 import { Client } from "./client.ts"
 import { CommandContext } from "./CommandContext.ts"
 import { StringReader } from "./stringReader.ts"
-import { Command, CommandArguments, CommandParameterType, Restriction } from "./types.ts"
+import { Command, CommandArguments, CommandParameterType } from "./types.ts"
 
 export const helpCommand: Command = {
   category: "system",
@@ -29,14 +29,14 @@ export const helpCommand: Command = {
 
     const categories = Object.keys(grouped);
     const embed = new EmbedBuilder().title(`Hello there, my prefix is \`${client.options.prefix}\``);
-    for (let category of categories) {
+    for (const category of categories) {
       embed.field(category, grouped[category].map((it) => `\`${it.name}\``).join(", "))
     }
     ctx.channel.sendMessage({ embeds: [embed] });
   }
 }
 
-function groupBy<T, K extends keyof any>(list: T[], getKey: (item: T) => K) {
+function groupBy<T, K extends string>(list: T[], getKey: (item: T) => K) {
   return list.reduce((previous, currentItem) => {
     const group = getKey(currentItem);
     if (!previous[group]) previous[group] = [];

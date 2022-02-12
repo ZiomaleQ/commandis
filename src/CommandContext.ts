@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 import { Message } from "../deps.ts";
 import { Client } from "./client.ts";
 import { Command } from "./types.ts";

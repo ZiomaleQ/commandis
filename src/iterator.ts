@@ -1,7 +1,7 @@
 import { EventEmitter } from "../deps.ts";
 
 export class Iterator extends EventEmitter {
-  private _canceled: boolean = false;
+  private _canceled = false;
   constructor() {
     super();
   }
@@ -13,7 +13,7 @@ export class Iterator extends EventEmitter {
 
   async iterate(values: AsyncIterableIterator<Deno.FsEvent> | Deno.FsWatcher): Promise<boolean> {
     try {
-      for await (let value of values) {
+      for await (const value of values) {
         if (value.kind == "access") continue;
         this.emit(value.kind, value.paths);
         if (this._canceled) break;

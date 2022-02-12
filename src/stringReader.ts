@@ -35,7 +35,7 @@ export class StringReader {
 
   readWord() {
     this.skipSpaces();
-    let start = this.cursor;
+    const start = this.cursor;
     while (this.peek().trim() != "" && this.canRead()) this.moveByInt();
     return this.text.substring(start, this.cursor) || undefined;
   }
@@ -46,7 +46,7 @@ export class StringReader {
       this.skipSpaces();
       if (this.peek() == '"') {
         this.cursor++;
-        let start = this.cursor;
+        const start = this.cursor;
         this.moveByInt();
         while (this.canRead() && this.peek() != '"') this.moveByInt();
         this.moveByInt();
@@ -65,14 +65,14 @@ export class StringReader {
 
   readInt() {
     this.skipSpaces();
-    let start = this.cursor;
+    const start = this.cursor;
     while (this.canRead() && this.isAllowedInInt(this.peek())) this.moveByInt();
     return ~~(this.text.substring(start, this.cursor));
   }
 
   readPoint() {
     this.skipSpaces();
-    let start = this.cursor;
+    const start = this.cursor;
     while (this.canRead() && this.isAllowedInPoint(this.peek())) {
       this.moveByInt();
     }

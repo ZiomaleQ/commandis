@@ -67,10 +67,10 @@ export class Client extends Corddis {
     }
 
     if (this.options.readEvents) {
-      let eventDir = this.options.eventsDir ?? Deno.cwd();
+      const eventDir = this.options.eventsDir ?? Deno.cwd();
       for (const entry of Deno.readDirSync(eventDir)) {
         if (!entry.isFile && !entry.name.endsWith(".ts")) continue;
-        let event = await import(`file://${eventDir}/${entry.name}`).then((it) => it.default as Event);
+        const event = await import(`file://${eventDir}/${entry.name}`).then((it) => it.default as Event);
         this.events.$attach(to(event.name), event.run.bind(null, this));
       }
     }
@@ -90,7 +90,7 @@ export class Client extends Corddis {
         commandName = interpreter.readWord() ?? "help";
         command = this.commands.find((cmd) => cmd.name == commandName);
 
-        let helpWord = interpreter.readWord();
+        const helpWord = interpreter.readWord();
 
         //Help for desired command
         if (helpWord == "help" && command?.help) return typeof command.help === "string" ? msg.reply(command.help) : msg.reply(command.help);
@@ -115,6 +115,7 @@ export class Client extends Corddis {
   }
 
   /** Wait for a certain event */
+  // deno-lint-ignore no-explicit-any
   async waitFor(eventName: EventsNames): Promise<any> {
     return await new Promise((resolve) => {
       this.events.$attachOnce(to(eventName), resolve);
@@ -124,12 +125,12 @@ export class Client extends Corddis {
   private async _modifyCommand(path: string) {
     if (!this.options.readCommands) throw "Commands are not red";
     if (!path.endsWith(".ts")) return;
-    var random = Math.random().toString(36).substring(2).toString();
-    let command = (await import(`file://${path}#${random}`)).default as Command;
-    var index = this.commands.findIndex((it) => it.name == command?.name);
+    const random = Math.random().toString(36).substring(2).toString();
+    const command = (await import(`file://${path}#${random}`)).default as Command;
+    const index = this.commands.findIndex((it) => it.name == command?.name);
     if (index < 0 && !command) return;
 
-    var text = "Added";
+    let text = "Added";
 
     if (index < 0) this.commands.push(command);
     else {
